@@ -1,0 +1,16 @@
+gene,aa_pos,ref,alt,blosum_62_score,fixed_in_outbreak_strain,frequency in outbreak strain (number of samples),fully conserved across ebola genus?,conservative substitution across ebola genus and non-conservative in 2014
+GP,46,Ser,Asn,1,no,1,no,no
+GP,82,Ala,Val,0,no,78,yes,no
+GP,291,Trp,Arg,-3,no,1,yes,yes
+L,433,Arg,Lys,2,no,2,no,no
+L,759,Asp,Gly,-1,no,78,no,yes
+L,1340,Gln,Arg,1,no,1,no,no
+L,1492,Leu,Ile,2,no,2,no,no
+L,1724,Cys,Arg,-3,no,1,no,no
+NP,35,Ile,Val,3,no,1,yes,no
+NP,111,Arg,Cys,-3,no,72,no,yes
+NP,552,Glu,Gly,-2,no,1,no,no
+NP,632,Gln,Arg,1,no,1,no,no
+VP24,153,Ile,Val,3,no,1,no,no
+VP35,87,Val,Gly,-3,no,1,no,no
+VP40,94,Ile,Thr,-1,no,1,yes,yes
