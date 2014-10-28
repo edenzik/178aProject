@@ -11,3 +11,5 @@ http://en.wikipedia.org/wiki/List_of_Ebola_outbreaks
 http://www.rcsb.org/pdb/explore.do?structureId=2EBO
 
 http://en.wikipedia.org/wiki/List_of_Ebola_outbreaks
+
+http://www.plospathogens.org/article/info%3Adoi%2F10.1371%2Fjournal.ppat.1002847
