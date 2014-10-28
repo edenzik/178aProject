@@ -15,3 +15,5 @@ http://en.wikipedia.org/wiki/List_of_Ebola_outbreaks
 http://www.plospathogens.org/article/info%3Adoi%2F10.1371%2Fjournal.ppat.1002847
 
 http://www-als.lbl.gov/index.php/contact/163-structure-of-the-ebola-virus-glycoprotein-bound-to-an-antibody-from-a-human-survivor.html
+
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2829775/
