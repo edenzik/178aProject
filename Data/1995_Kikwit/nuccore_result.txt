@@ -1,0 +1,7 @@
+1. Zaire ebolavirus isolate EBOV/H.sapiens-tc/COD/1995/13625 Kikwit, complete genome
+18,959 bp linear cRNA 
+KC242796.1 GI:436409389
+
+2. Zaire ebolavirus isolate EBOV/H.sapiens-tc/COD/1995/13709 Kikwit, complete genome
+18,959 bp linear cRNA 
+KC242799.1 GI:436409419

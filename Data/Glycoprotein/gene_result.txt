@@ -1,0 +1,227 @@
+GP virion spike glycoprotein precursor[Zaire ebolavirus]
+Gene ID: 911829, created on 1-Aug-2003
+
+SUMMARY
+-------------------------------------------------------------------------------------------------
+
+Gene description: virion spike glycoprotein precursor
+Locus tag: ZEBOVgp4
+Gene type: protein coding
+RNA name: sGP
+RefSeq status: PROVISIONAL
+Organism: Zaire ebolavirus
+
+Lineage: Viruses; ssRNA negative-strand viruses; Mononegavirales; Filoviridae; Ebolavirus
+
+
+GENOMIC CONTEXT
+-------------------------------------------------------------------------------------------------
+
+
+Location: 
+Sequence: 
+NC_002549.1 (5900..8305)
+
+
+BIBLIOGRAPHY
+-------------------------------------------------------------------------------------------------
+
+
+Related Articles in PubMed
+
+1. Ebolavirus entry requires a compact hydrophobic fist at the tip of the fusion
+loop. Gregory SM, . J Virol, 2014 Jun, PMID 24696482., Free PMC Article(s): PMC4054381
+2. [Research progress on ebola virus glycoprotein]. Ding GY, . Bing Du Xue Bao, 2013
+Mar, PMID 23757858.
+3. A mutation in the Ebola virus envelope glycoprotein restricts viral entry in a
+host species- and cell-type-specific manner. Martinez O, . J Virol, 2013 Mar,
+PMID 23302883., Free PMC Article(s): PMC3592116
+4. Structure of an antibody in complex with its mucin domain linear epitope that is 
+protective against Ebola virus. Olal D, . J Virol, 2012 Mar, PMID 22171276., Free PMC Article(s): PMC3302272
+5. Structure and function of the complete internal fusion loop from Ebolavirus
+glycoprotein 2. Gregory SM, . Proc Natl Acad Sci U S A, 2011 Jul 5, PMID
+21690393., Free PMC Article(s): PMC3131375
+6. Characterization of the receptor-binding domain of Ebola glycoprotein in viral
+entry. Wang J, . Virol Sin, 2011 Jun, PMID 21667336.
+
+GeneRIFs: Gene References Into Functions
+
+1. The glycoprotein's internal fusion loop is critical for viral entry and fusion.
+2. GP play multiple functions including virus attachment and entry, cell rounding
+and cytotoxicity and down-regulation of host surface proteins.[review]
+3. findings demonstrate that a GP mutant, GP-F88A, defective for entry into a
+variety of human cell types, including antigen-presenting cells (APCs) can
+mediate viral entry into mouse CD11b( ) APCs; studies suggest an important role
+for NPC1 in the differential entry of GP-F88A into mouse versus human APCs
+4. Neither EBV GP nor HIV-1 Vpu had any effect on tetherin's distribution within
+lipid raft domains.
+5. Purified human NPC1 binds only to a cleaved form of Ebola virus spike
+glycoprotein that is generated within cells during entry, and only viruses
+containing cleaved glycoprotein can utilize a receptor retargeted to the cell
+surface.
+6. Ebola virus GP forms a tandem beta-hairpin structure that binds deeply into a
+cleft in the antibody-combining site.
+7. Cathepsins B and L activate Ebola but not Marburg virus glycoproteins for
+efficient entry into cell lines and macrophages independent of TMPRSS2
+expression.
+8. Cathepsin L cleavage potentiates the Ebola virus GP to undergo a fusion-relevant 
+conformational change.
+9. R64 and K95 of GP1 are involved in receptor binding.
+10. liposome fusion data and NMR structures for a complete (54-residue)
+disulfide-bonded internal fusion loop (Ebov FL) in a membrane mimetic
+11. Axl enhances entry of Zaire ebolavirus without direct interactions with the viral
+glycoprotein.
+12. While ssGP appears to share similar structural properties with sGP, it does not
+appear to have the same anti-inflammatory function on endothelial cells as sGP.
+13. These findings suggest that Ebola virus GP uses a novel mechanism to circumvent
+tetherin restriction.
+14. CatB cleavage is required to facilitate the triggering of viral membrane fusion
+by destabilizing the prefusion conformation of EBOV GP
+15. The authors show that the mucin domain from the highly pathogenic Zaire subtype
+of Ebola virus is sufficient to cause characteristic cytopathology when expressed
+in the context of a foreign glycoprotein.
+16. the crystal structure of EBOV GP in its trimeric, pre-fusion conformation
+(GP1+GP2) bound to a neutralizing antibody, KZ52, derived from a human survivor
+of the 1995 Kikwit outbreak
+17. Ebola virus GP cytotoxicity is regulated by dynamin-dependent cellular protein
+trafficking
+18. The transmembrane region of GP2 modifies the permeability of the plasma membrane.
+<pre/>
+
+VARIATION
+-------------------------------------------------------------------------------------------------
+<pre/><pre/>
+
+
+GENERAL GENE INFO
+-------------------------------------------------------------------------------------------------
+
+misc_signal
+	Loc: 5900-5911  
+	Loc: 6918-6924 function = RNA editing 
+
+	Loc: 8288-8299  
+
+
+polyA_signal
+	Loc: 8295-8305  
+
+
+GENERAL PROTEIN INFORMATION
+-------------------------------------------------------------------------------------------------
+Preferred Names
+	virion spike glycoprotein precursor
+Names
+	spike glycoprotein
+	small secreted glycoprotein
+	second secreted glycoprotein
+NP_066246.1
+	an addition A residue is inserted during transcription; encodes two disulfide linked subunits GP1 and GP2 
+NP_066247.1
+	sGP secreted as a anti-parallel oriented homodimer 
+NP_066248.1
+	second non-structural secreted glycoprotein; secreted in a monomeric form; one A residue is deleted or two additional A residues are inserted at the editing site during transcription of the GP gene 
+
+NCBI REFERENCE SEQUENCES (RefSeq)
+-------------------------------------------------------------------------------------------------
+
+
+Genome Annotation
+The following sections contain reference sequences that belong to a specific genome build. 
+This section includes genomic Reference Sequences (RefSeqs) from all assemblies on which 
+this gene is annotated, such as RefSeqs for chromosomes and scaffolds (contigs) from both 
+reference and alternate assemblies. Model RNAs and proteins are also reported here.
+
+Reference assembly
+
+	Genomic
+		NC_002549.1
+		Range   	5899..8304
+		Download	GenBank FASTA Sequence Viewer (Graphics) 
+
+
+
+	mRNA and Protein(s) 
+
+NP_066246.1 LOW QUALITY PROTEIN: spike glycoprotein [Zaire ebolavirus]
+
+	See proteins identical to NP_066246.1 at http://130.14.22.59/protein?LinkName=protein_protein_identical%26from_uid=10313995
+
+	  UniProtKB/TrEMBL: A9QPL9
+	  UniProtKB/Swiss-Prot: Q05320
+
+
+NP_066247.1 small secreted glycoprotein [Zaire ebolavirus]
+
+	See proteins identical to NP_066247.1 at http://130.14.22.59/protein?LinkName=protein_protein_identical%26from_uid=10313994
+
+	  UniProtKB/TrEMBL: A9QPM0
+	  UniProtKB/Swiss-Prot: P60170
+	  UniProtKB/Swiss-Prot: P60171
+
+
+NP_066248.1 LOW QUALITY PROTEIN: second secreted glycoprotein [Zaire ebolavirus]
+
+	See proteins identical to NP_066248.1 at http://130.14.22.59/protein?LinkName=protein_protein_identical%26from_uid=10313996
+
+	  UniProtKB/TrEMBL: L7QHW1
+	  UniProtKB/Swiss-Prot: Q9YMG2
+
+
+RELATED SEQUENCES
+-------------------------------------------------------------------------------------------------
+
+Nucleotide			Protein
+-------------------------------------------------------------------------------------------------
+genomic             		AF272001.1	AAG40168.1
+genomic             		L11365.1	AAB81004.1
+genomic             		KF827427.1	AHC70246.1
+genomic             		EU224440.2	ABX75367.1
+genomic             		U23187.1	AAC54887.1
+genomic             		KC242799.1	AGB56822.1
+genomic             		U31033.1	AAA96745.1
+genomic             		U23187.1	AAC54886.1
+genomic             		KC242795.1	AGB56786.1
+genomic             		KC242793.1	AGB56768.1
+genomic             		KC242792.1	AGB56759.1
+genomic             		KC242791.1	AGB56750.1
+genomic             		KC242801.1	AGB56840.1
+genomic             		U28077.1	AAB37094.1
+genomic             		AY142960.1	AAN37508.1
+genomic             		KC242797.1	AGB56804.1
+genomic             		AF272001.1	AAG40167.1
+genomic             		KC242796.1	AGB56795.1
+genomic             		EU224440.2	ABX75368.1
+genomic             		EU224440.2	ABX75369.1
+genomic             		KC242792.1	AGB56760.1
+genomic             		KC242791.1	AGB56751.1
+genomic             		KC242793.1	AGB56769.1
+genomic             		KC242801.1	AGB56841.1
+genomic             		KC242799.1	AGB56823.1
+genomic             		KC242795.1	AGB56787.1
+genomic             		KC242796.1	AGB56796.1
+genomic             		KC242797.1	AGB56805.1
+
+Protein Accession		Links
+-------------------------------------------------------------------------------------------------
+AAD14585.1     	GenPept		
+
+GENE LINKOUT
+-------------------------------------------------------------------------------------------------
+The following LinkOut(www.ncbi.nlm.nih.gov/projects/linkout/index.html) resources
+are supplied by external providers. These providers are responsible for
+maintaining the links.
+
+Molecular Biology Databases
+  (Free resource) (free) EVEX
+	EVEX text mining resourceEVEX text mining resource
+  (Free resource) (free) Viral Bioinformatics Resource Center
+	[sGP][sGP][ssGP][ssGP][Delta peptide][Delta peptide][virion spike glycoprotein precursor][virion spike glycoprotein precursor]
+  (Free resource) (free) iHOP - Information Hyperlinked over Proteins
+	iHOP - Information Hyperlinked over Proteins
+
+Research Materials
+  (Order form) Addgene Non-profit plasmid repository
+	Get  Plasmids - AddgeneGet  Plasmids - Addgene
+  (Order form) Sino Biological Inc.
+	Ebola virus EBOV (subtype Zaire, strain Mayinga 1976) glycoprotein Gene cDNA Clone (full-length ORF Clone)Ebola virus EBOV (subtype Zaire, strain Mayinga 1976) glycoprotein Gene cDNA Clone (full-length ORF Clone)

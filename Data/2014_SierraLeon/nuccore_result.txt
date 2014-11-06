@@ -1,0 +1,396 @@
+
+1. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-NM042.3, partial genome
+18,613 bp linear cRNA 
+KM233118.1 GI:667853353
+
+2. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-NM042.2, partial genome
+18,685 bp linear cRNA 
+KM233117.1 GI:667853343
+
+3. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-NM042.1, partial genome
+18,926 bp linear cRNA 
+KM233116.1 GI:667853332
+
+4. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3857, partial genome
+18,835 bp linear cRNA 
+KM233115.1 GI:667853322
+
+5. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3856.3, partial genome
+18,939 bp linear cRNA 
+KM233114.1 GI:667853311
+
+6. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3856.1, partial genome
+18,958 bp linear cRNA 
+KM233113.1 GI:667853301
+
+7. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3851, partial genome
+18,923 bp linear cRNA 
+KM233112.1 GI:667853291
+
+8. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3850, partial genome
+18,749 bp linear cRNA 
+KM233111.1 GI:667853280
+
+9. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3848, partial genome
+18,956 bp linear cRNA 
+KM233110.1 GI:667853270
+
+10. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3846, partial genome
+18,958 bp linear cRNA 
+KM233109.1 GI:667853259
+
+11. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3845, partial genome
+18,915 bp linear cRNA 
+KM233108.1 GI:667853249
+
+12. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3841, partial genome
+18,876 bp linear cRNA 
+KM233107.1 GI:667853239
+
+13. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3840, partial genome
+18,945 bp linear cRNA 
+KM233106.1 GI:667853228
+
+14. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3838, partial genome
+18,914 bp linear cRNA 
+KM233105.1 GI:667853218
+
+15. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3834, partial genome
+18,921 bp linear cRNA 
+KM233104.1 GI:667853207
+
+16. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3831, partial genome
+18,950 bp linear cRNA 
+KM233103.1 GI:667853197
+
+17. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3829, partial genome
+18,945 bp linear cRNA 
+KM233102.1 GI:667853186
+
+18. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3827, partial genome
+18,876 bp linear cRNA 
+KM233101.1 GI:667853176
+
+19. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3826, partial genome
+18,932 bp linear cRNA 
+KM233100.1 GI:667853166
+
+20. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3825.2, partial genome
+18,953 bp linear cRNA 
+KM233099.1 GI:667853155
+
+21. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3825.1, partial genome
+18,950 bp linear cRNA 
+KM233098.1 GI:667853145
+
+22. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3823, partial genome
+18,953 bp linear cRNA 
+KM233097.1 GI:667853134
+
+23. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3822, partial genome
+18,953 bp linear cRNA 
+KM233096.1 GI:667853124
+
+24. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3821, partial genome
+18,862 bp linear cRNA 
+KM233095.1 GI:667853113
+
+25. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3820, partial genome
+18,925 bp linear cRNA 
+KM233094.1 GI:667853103
+
+26. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3819, partial genome
+18,880 bp linear cRNA 
+KM233093.1 GI:667853093
+
+27. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3818, partial genome
+18,948 bp linear cRNA 
+KM233092.1 GI:667853082
+
+28. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3817, partial genome
+18,886 bp linear cRNA 
+KM233091.1 GI:667853072
+
+29. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3816, partial genome
+18,799 bp linear cRNA 
+KM233090.1 GI:667853062
+
+30. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3814, partial genome
+18,914 bp linear cRNA 
+KM233089.1 GI:667853051
+
+31. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3810.2, partial genome
+18,921 bp linear cRNA 
+KM233088.1 GI:667853041
+
+32. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3810.1, partial genome
+18,859 bp linear cRNA 
+KM233087.1 GI:667853030
+
+33. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3809, partial genome
+18,830 bp linear cRNA 
+KM233086.1 GI:667853020
+
+34. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3808, partial genome
+18,882 bp linear cRNA 
+KM233085.1 GI:667853009
+
+35. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3807, partial genome
+18,921 bp linear cRNA 
+KM233084.1 GI:667852999
+
+36. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3805.2, partial genome
+18,773 bp linear cRNA 
+KM233083.1 GI:667852988
+
+37. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3805.1, partial genome
+18,812 bp linear cRNA 
+KM233082.1 GI:667852978
+
+38. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3800, partial genome
+18,925 bp linear cRNA 
+KM233081.1 GI:667852967
+
+39. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3799, partial genome
+18,945 bp linear cRNA 
+KM233080.1 GI:667852957
+
+40. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3798, partial genome
+18,870 bp linear cRNA 
+KM233079.1 GI:667852945
+
+41. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3796, partial genome
+18,912 bp linear cRNA 
+KM233078.1 GI:667852934
+
+42. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3795, partial genome
+18,897 bp linear cRNA 
+KM233077.1 GI:667852924
+
+43. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3789.1, partial genome
+18,811 bp linear cRNA 
+KM233076.1 GI:667852914
+
+44. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3788, partial genome
+18,931 bp linear cRNA 
+KM233075.1 GI:667852903
+
+45. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3787, partial genome
+18,890 bp linear cRNA 
+KM233074.1 GI:667852893
+
+46. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3786, partial genome
+18,912 bp linear cRNA 
+KM233073.1 GI:667852882
+
+47. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3782, partial genome
+18,949 bp linear cRNA 
+KM233072.1 GI:667852872
+
+48. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3771, partial genome
+18,901 bp linear cRNA 
+KM233071.1 GI:667852861
+
+49. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3770.2, partial genome
+18,959 bp linear cRNA 
+KM233070.1 GI:667852851
+
+50. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3770.1, partial genome
+18,958 bp linear cRNA 
+KM233069.1 GI:667852840
+
+51. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3769.4, partial genome
+18,925 bp linear cRNA 
+KM233068.1 GI:667852830
+
+52. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3769.3, partial genome
+18,910 bp linear cRNA 
+KM233067.1 GI:667852819
+
+53. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3769.2, partial genome
+18,876 bp linear cRNA 
+KM233066.1 GI:667852809
+
+54. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3769.1, partial genome
+18,925 bp linear cRNA 
+KM233065.1 GI:667852798
+
+55. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3765.2, partial genome
+18,803 bp linear cRNA 
+KM233064.1 GI:667852788
+
+56. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3764, partial genome
+18,955 bp linear cRNA 
+KM233063.1 GI:667852778
+
+57. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3758, partial genome
+18,937 bp linear cRNA 
+KM233062.1 GI:667852767
+
+58. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3752, partial genome
+18,890 bp linear cRNA 
+KM233061.1 GI:667852757
+
+59. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3750.3, partial genome
+18,711 bp linear cRNA 
+KM233060.1 GI:667852747
+
+60. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3750.2, partial genome
+18,791 bp linear cRNA 
+KM233059.1 GI:667852736
+
+61. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3750.1, partial genome
+18,850 bp linear cRNA 
+KM233058.1 GI:667852726
+
+62. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3735.2, partial genome
+18,954 bp linear cRNA 
+KM233057.1 GI:667852716
+
+63. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3735.1, partial genome
+18,957 bp linear cRNA 
+KM233056.1 GI:667852706
+
+64. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3734.1, partial genome
+18,878 bp linear cRNA 
+KM233055.1 GI:667852696
+
+65. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3729, partial genome
+18,948 bp linear cRNA 
+KM233054.1 GI:667852686
+
+66. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3724, partial genome
+18,957 bp linear cRNA 
+KM233053.1 GI:667852676
+
+67. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3713.4, partial genome
+18,941 bp linear cRNA 
+KM233052.1 GI:667852666
+
+68. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3713.3, partial genome
+18,951 bp linear cRNA 
+KM233051.1 GI:667852656
+
+69. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3713.2, partial genome
+18,956 bp linear cRNA 
+KM233050.1 GI:667852646
+
+70. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3707, partial genome
+18,946 bp linear cRNA 
+KM233049.1 GI:667852635
+
+71. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM124.4, partial genome
+18,829 bp linear cRNA 
+KM233048.1 GI:667852625
+
+72. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM124.3, partial genome
+18,921 bp linear cRNA 
+KM233047.1 GI:667852614
+
+73. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM124.2, partial genome
+18,867 bp linear cRNA 
+KM233046.1 GI:667852604
+
+74. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM124.1, partial genome
+18,919 bp linear cRNA 
+KM233045.1 GI:667852592
+
+75. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM121, partial genome
+18,914 bp linear cRNA 
+KM233044.1 GI:667852582
+
+76. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM120, partial genome
+18,915 bp linear cRNA 
+KM233043.1 GI:667852572
+
+77. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM119, partial genome
+18,912 bp linear cRNA 
+KM233042.1 GI:667852562
+
+78. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM115, partial genome
+18,886 bp linear cRNA 
+KM233041.1 GI:667852552
+
+79. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM113, partial genome
+18,922 bp linear cRNA 
+KM233040.1 GI:667852542
+
+80. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM112, partial genome
+18,953 bp linear cRNA 
+KM233039.1 GI:667852531
+
+81. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM111, partial genome
+18,914 bp linear cRNA 
+KM233038.1 GI:667852521
+
+82. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM110, partial genome
+18,915 bp linear cRNA 
+KM233037.1 GI:667852510
+
+83. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM106, partial genome
+18,873 bp linear cRNA 
+KM233036.1 GI:667852500
+
+84. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM104, partial genome
+18,912 bp linear cRNA 
+KM233035.1 GI:667852489
+
+85. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3687.1, partial genome
+18,700 bp linear cRNA 
+KM034563.1 GI:661348735
+
+86. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3686.1, partial genome
+18,957 bp linear cRNA 
+KM034562.1 GI:661348725
+
+87. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3683.1, partial genome
+18,908 bp linear cRNA 
+KM034561.1 GI:661348715
+
+88. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3682.1, partial genome
+18,952 bp linear cRNA 
+KM034560.1 GI:661348705
+
+89. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3680.1, partial genome
+18,926 bp linear cRNA 
+KM034559.1 GI:661348695
+
+90. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3679.1, partial genome
+18,915 bp linear cRNA 
+KM034558.1 GI:661348685
+
+91. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3677.2, partial genome
+18,956 bp linear cRNA 
+KM034557.1 GI:661348675
+
+92. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3677.1, partial genome
+18,932 bp linear cRNA 
+KM034556.1 GI:661348665
+
+93. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3676.2, partial genome
+18,950 bp linear cRNA 
+KM034555.1 GI:661348655
+
+94. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3676.1, partial genome
+18,948 bp linear cRNA 
+KM034554.1 GI:661348645
+
+95. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-G3670.1, partial genome
+18,927 bp linear cRNA 
+KM034553.1 GI:661348635
+
+96. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM098, partial genome
+18,769 bp linear cRNA 
+KM034552.1 GI:661348625
+
+97. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM096, partial genome
+18,926 bp linear cRNA 
+KM034551.1 GI:661348615
+
+98. Zaire ebolavirus isolate Ebola virus H.sapiens-wt/SLE/2014/ManoRiver-EM095, partial genome
+18,911 bp linear cRNA 
+KM034550.1 GI:661348605
+
+99. Zaire ebolavirus isolate H.sapiens-wt/SLE/2014/ManoRiver-EM095B, partial genome
+18,835 bp linear cRNA 
+KM034549.1 GI:661348595

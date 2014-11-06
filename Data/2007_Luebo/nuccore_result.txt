@@ -1,0 +1,4 @@
+
+1. Zaire ebolavirus isolate EBOV/H.sapiens-tc/COD/2007/5 Luebo, complete genome
+18,958 bp linear cRNA 
+KC242790.1 GI:436409329
