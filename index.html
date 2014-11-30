@@ -69,9 +69,30 @@
 
 
 	  <div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6">
+		<div class="col-md-12">
 		  <h3>Introduction</h3>
-		  <p>Some intro</p>
+		  <p>There are five strands of ebolavirus recognized by the International Committee on Taxonomy of Viruses: Ebola virus (EBOV), Sudan virus (SUDV), Reston virus (RESTV), Taï Forest virus (TAFV), and Bundibugyo virus (BDBV). Despite the large number of outbreaks over the past 40 years, we focus our analysis on Ebola virus and outbreaks in Zaire (1976), Zaire (1995), Democractic Republic of the Congo (2007), and Sierra Leon (2014). 
+	      <br><br>
+	      The World Health Organization reports 15,351 Ebola cases with 5,459 deaths across eight countries so far in this current outbreak. Amongst the outbreak, Stephen Gire and 49 others published <i>Genomic surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak</i> in Science this August and made publicly available 99 fully sequenced Ebola virus genomes from 78 patients in Sierra Leon. 
+      </p>
+      </div>
+      <div class="col-md-15">
+   		<div id='dashboard' align="center">
+   	</div>
+   		<script src="http://d3js.org/d3.v3.min.js"></script>
+   		<script src="js/charts/first.js"></script>
+
+
+    <script>
+        var freqData=[
+        {State:'Zaire(1976)',freq:{deaths:280, survivors:38}}
+        ,{State:'Zaire(1995)',freq:{deaths:254, survivors:61}}
+        ,{State:'D.R.Congo(2007)',freq:{deaths:187, survivors:77}}
+        ,{State:'S.L.(2014)',freq:{deaths:1267, survivors:4923}}
+        ];
+
+        dashboard('#dashboard',freqData);
+    </script>
 		</div>
 
 		<div class="col-lg-6 col-md-6 col-sm-6">
