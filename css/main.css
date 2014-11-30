@@ -9,6 +9,8 @@ body {
 }
 iframe {
     padding-top: 0.2cm;
+    margin-left: 0.2cm;
+    margin-right: auto;
 }
 h1 {
     font-size: 2em;
