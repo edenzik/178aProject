@@ -1,0 +1,21 @@
+We chose to study the most recent outbreak of Ebola, EBOV. Ebola is a single strand of RNA which encodes 7 proteins. Improvements in sequencing technology have allowed many copies of Ebola to be sequenced from the most recent outbreak. We used these 99 sequences to create a consensus sequence which is our reference sequence for 2014 (Sierra Leone). For previous outbreaks, we found complete sequences from 1976 (Mayinga), 1995 (Kitwit) and 2007 (Luebo). Multiple sequence alignment returned a percent identity matrix indicating a change of 3.14 % over 38 years. Applied to the 19000 bp strand of Ebola, this averages to 15.7 bp / year.
+
+What was more interesting was when we did a tBLASTn for each protein sequence against the corresponding gene segment for each strain of Ebola. Most of the proteins have 1% non-synonymous changes, but the GP protein had a 5% change, while the VP30 protein was 100% conserved. The glycoprotein is the only part of Ebola which is exposed, whereas the VP30 is one of the most internal proteins, responsible for transcription initiation and RNA stabilization.
+
+Even more interesting was when we looked at where the changes in GP occurred, there were few changes within the first 250 amino acids, and few changes after the 500th amino acid. This indicated that perhaps certain regions of the glycoprotein were ‘intentionally’ changing while others were ‘intentionally’ not changing.
+
+A look at the 3D structure of the GP as well as a detailed paper about the mechanism provided some possibilities. Most of the glycoprotein is protected by a mucin-like domain and is therefore impossible to target with antibodies. The parts which were changing corresponded to the parts of the glycoprotein which are exposed to attack by antibodies. A crystal structure is available with the GP complex bound to antibodies from a survivor. While this certainly seems like a promising area to target with a vaccine, the problem could be more difficult since these regions are changing, and the antibodies of 1995 may not bind to the strain of 2014.
+
+(Furthermore, a one base frame shift allows Ebola to produce many copies of ‘ssGP’, a piece of GP corresponding to just this domain, which could act as a decoy in absorbing the body’s antibodies.)
+
+ A conserved sequence domain search indicated that the regions which were not changing did correspond to two important domains. The first domain is unique to a small class of filoviruses, and is responsible for recognizing extracellular receptors and initiating fusion. This region is protected by the mucin domain until it aligns with the cell. Mutation research showed 19 critical amino acids for this region to perform its function, especially the amino acids which link with the glycans.
+
+Also within this region, overlapping with one of the HR domains is an known immunosuppressive region found in RNA viruses like Ebola and HIV. 
+
+The other conserved region contains domains responsible for binding with the host, which are conserved across all Ebola species. A trigger unbinds the 3 GP subunits from their locked conformation and they extend into alpha helices which grab onto the host cell membrane, pulling the membranes together. 
+
+While our main focus was on the significantly high rate of change in GP, it might be interesting to look at the conserved nature of VP30. As a transcription factor, it makes sense that it would have to stay the same, assuming the initiation motif was the same. A motif search on the non-coding regions of the genome could be used to see if certain binding motifs have also stayed the same across the different strains.
+
+The L protein is the largest protein, and is the RNA dependant RNA polymerase. While the percent change in amino acids is not unusual, this amounts to 30 different residues. This could be typical of viruses, where low fidelity in the copy mechanism allows faster evolution. How Ebola controls which proteins are subject to repair and which are left to evolve could have to do with their relative locations in the capsid.
+
+
