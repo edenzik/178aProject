@@ -2,11 +2,11 @@ Introduction
 
 We chose to study the most recent outbreak of Ebola, EBOV. Ebola is a single strand of RNA which encodes 7 proteins. 
 
-(put ‘cartoon’ picture of ebola proteins and two line descriptions)
+(put ‘cartoon’ picture of ebola proteins and two line descriptions) google doc
 
 Improvements in sequencing technology have allowed many copies of Ebola to be sequenced from the most recent outbreak. We used these 99 sequences to create a consensus sequence which is our reference sequence for 2014 (Sierra Leone). For previous outbreaks, we found complete sequences from 1976 (Mayinga), 1995 (Kitwit) and 2007 (Luebo). Multiple sequence alignment returned a percent identity matrix indicating a change of 3.14 % over 38 years. 
 
-(put ‘percent identity matrix’ from clustal omega)
+(put ‘percent identity matrix’ from clustal omega) data/experiments
 
 Where do changes occur?
 
@@ -18,13 +18,13 @@ The glycoprotein is the only part of Ebola which is exposed, whereas the VP30 is
 
 Even more interesting was when we looked at where the changes in GP occurred, there were few changes within the first 250 amino acids, and few changes after the 500th amino acid. This indicated that perhaps certain regions of the glycoprotein were ‘intentionally’ changing while others were ‘intentionally’ not changing.
 
-(put data/comparisons/ ‘kitwit comparison’ and ‘mayinga comparison’ graphs)
+(put data/comparisons/ ‘kitwit comparison’ and ‘mayinga comparison’ graphs) data/comparisons
 
 3D Structure Analysis
 
 A look at the 3D structure of the GP as well as a detailed paper about the mechanism provided some possibilities. Most of the glycoprotein is protected by a mucin-like domain and is therefore impossible to target with antibodies. The parts which were changing corresponded to the parts of the glycoprotein which are exposed to attack by antibodies. A crystal structure is available with the GP complex bound to antibodies from a survivor.
 
-(put 3SCY 3d protein with antibodies ‘antibodies.pbd’)
+(put 3SCY 3d protein with antibodies ‘antibodies.pbd’) email
 
  While this certainly seems like a promising area to target with a vaccine, the problem could be more difficult since these regions are changing, and the antibodies of 1995 may not bind to the strain of 2014.
 
@@ -34,23 +34,24 @@ Conserved Domains
 
  A conserved sequence domain search indicated that the regions which were not changing did correspond to two important domains. The first domain is unique to a small class of filoviruses, and is responsible for recognizing extracellular receptors and initiating fusion. This region is protected by the mucin domain until it aligns with the cell. 
 
-(put mechanism image)
+(put mechanism image) google doc
 
 Mutation research showed 19 critical amino acids for this region to perform its function, especially the amino acids which link with the glycans.
 
-(put ‘filo_glycop’ conserved domain image’)
+(put purple ‘filo_glycop’ conserved domain image’) google doc
 
 The other conserved region contains domains responsible for binding with the host, which are conserved across all Ebola species. 
 
-(put core gp2.pdb)
+(put core gp2.pdb) email
 
 A trigger unbinds the 3 GP subunits from their locked conformation and they extend into alpha helices which grab onto the host cell membrane, pulling the membranes together. 
 
-(put extended gp2.pdb)
+(put extended gp2.pdb) email
+(Yellow represents GP, Green represents antibodies)
 
 Also within this region, overlapping with one of the HR domains is a known immunosuppressive region found in RNA viruses like Ebola and HIV. 
 
-(put other conserved domain image)
+(put other red conserved domain image) google doc
 
 Future Research
 
