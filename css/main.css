@@ -12,6 +12,9 @@ iframe {
     margin-left: 0.2cm;
     margin-right: auto;
 }
+img {
+    padding-bottom: 0.5cm;
+}
 h1 {
     font-size: 2em;
     font-weight: 400;
@@ -29,7 +32,7 @@ h3 {
     margin: 2em 0 0.5em 0;
 
 }
-#glmol02 {
+#glmol01 {
     width: 200px;
     height: 200px;
     margin-left: auto;
@@ -134,5 +137,34 @@ rect:hover {  fill:blue; }
 .legendFreq, .legendPerc{
     align:right;
     width:50px;
+}
+
+.diagram {
+    margin-top: 5em;
+}
+
+.ebola-image img{
+    height: 100px,
+    width: 100px
+
+}
+
+.axis {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.space-out {
+    margin-top: 4em;
+}
+
+.title {
+    margin-top: 1.5em;
 }
 
