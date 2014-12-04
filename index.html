@@ -771,35 +771,25 @@
         <div class="col-md-6">
             <h3>Consensus sequence</h3>
             <p>We wrote a MATLAB script to generate a consensus sequence from clustal omega multiple sequence alignments to generate a consensus sequence of the Ebola virus across our studied outbreaks. The script is currently written with the assumption that alignment was performed on four sequences; however, it may be easily generalized to generate consensus sequences for a different number. </p>
+            <button onclick="location.href='data/consensus/consensus.m'">
+                Matlab Script</button>
+            <button onclick="location.href='data/consensus/consensus.txt'">
+                Sequence</button>
+
+
         </div>
         <div class="col-md-6">
-            <img style="padding-top: 5em;" src="img/HRdomain.png" alt="Domain" class="img-rounded">
+            <div id="glmol01"></div>
+            <textarea id="glmol01_src" style="display: none;"></textarea>
         </div>
+
     </div>
 
 
     <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <hr/>
-            <h3>Stuff about structure</h3>
-            <h4>Basic Structure</h4>
+        <div class="col-md-12">
 
-            <p>Lorem ipsum dolor sit amet, mea patrioque tincidunt mnesarchum an, eu nam saperet rationibus.
-                Invidunt imperdiet consectetuer vel cu, an mea illum mollis voluptatum. Ea wisi modus lobortis
-                usu, cum id commodo scripta deserunt, ea sonet nobis definitionem usu. Quem salutandi voluptatum
-                mel ad, commodo perfecto an mel. Id vocibus oportere sed, clita ullamcorper no cum. Movet
-                adipisci euripidis ut eum, ei patrioque inciderint complectitur eum.</p>
-
-            <h4>More details</h4>
-
-            <p>Lorem ipsum dolor sit amet, mea patrioque tincidunt mnesarchum an, eu nam saperet rationibus.
-                Invidunt imperdiet consectetuer vel cu, an mea illum mollis voluptatum. Ea wisi modus lobortis
-                usu, cum id commodo scripta deserunt, ea sonet nobis definitionem usu. Quem salutandi voluptatum
-                mel ad, commodo perfecto an mel. Id vocibus oportere sed, clita ullamcorper no cum. Movet
-                adipisci euripidis ut eum, ei patrioque inciderint complectitur eum.</p>
-
-
-            <h4>References</h4>
+            <h3>References</h3>
             <ul>
                 <li>CVE-2014-0160</li>
                 <li>NCSC-FI case# 788210</li>
