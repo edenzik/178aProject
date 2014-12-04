@@ -121,743 +121,744 @@
                 For previous outbreaks, we found complete sequences from 1976 (Mayinga), 1995 (Kitwit) and 2007 (Luebo).
                 Multiple sequence alignment returned a percent identity matrix indicating a change of 3.14 % over 38 years.
             </p>
-        <p>
-            For this analysis, we utilized public facing Ebola virus genomes from NCBI. Specifically we utilized:
-            <a href = "http://www.ncbi.nlm.nih.gov/nuccore/NC_002549">NC_002549</a>(1976 outbreak), <a href = "http://www.ncbi.nlm.nih.gov/nuccore/KC242796.1">KC242796.1</a>(1995 outbreak), <a href = "http://www.ncbi.nlm.nih.gov/nuccore/KC242790.1">KC242790.1</a>(2007 outbreak), and <a href = "http://www.ncbi.nlm.nih.gov/nuccore/KM233090.1">KM233090.1</a>(2007 outbreak). Gire et. al. sequenced the Ebola virus genomes from 78 patients to obtain 99 genomes, due to intrahost variation, with all available in a <a href = "http://www.ncbi.nlm.nih.gov/bioproject?LinkName=nuccore_bioproject&from_uid=667853062">Bioproject</a>.
-        </p>
-    </div>
+            <p>
+                For this analysis, we utilized public facing Ebola virus genomes from NCBI. Specifically we utilized:
+                <a href = "http://www.ncbi.nlm.nih.gov/nuccore/NC_002549">NC_002549</a>(1976 outbreak), <a href = "http://www.ncbi.nlm.nih.gov/nuccore/KC242796.1">KC242796.1</a>(1995 outbreak), <a href = "http://www.ncbi.nlm.nih.gov/nuccore/KC242790.1">KC242790.1</a>(2007 outbreak), and <a href = "http://www.ncbi.nlm.nih.gov/nuccore/KM233090.1">KM233090.1</a>(2007 outbreak). Gire et. al. sequenced the Ebola virus genomes from 78 patients to obtain 99 genomes, due to intrahost variation, with all available in a <a href = "http://www.ncbi.nlm.nih.gov/bioproject?LinkName=nuccore_bioproject&from_uid=667853062">Bioproject</a>.
+            </p>
+        </div>
+        </div>
 
         <div class="row">
             <div class="col-md-12">
-            <h3>How has the virus changed over time?</h3>
-            <p>Gire 2014 found that a rooted-to-tip distance correlated better with rooting from the 1976 outbreak than the 2014 outbreak. We utilized Clustal Omega to find the sequence identity between each outbreak and discovered that, the outbreak has become increasingly divergent from the 1976 strand over time.</p>
+                <h3>How has the virus changed over time?</h3>
+                <p>Gire 2014 found that a rooted-to-tip distance correlated better with rooting from the 1976 outbreak than the 2014 outbreak. We utilized Clustal Omega to find the sequence identity between each outbreak and discovered that, the outbreak has become increasingly divergent from the 1976 strand over time.</p>
 
-            <br>
+                <br>
 
-            <img src="img/identity.png" alt="Ebola Virus" class="img-rounded" width="550" align="middle">
+                <img src="img/identity.png" alt="Ebola Virus" class="img-rounded" width="550" align="middle">
 
-            <br><br>
+                <br><br>
 
-            <img src="img/seqident.png" alt="Ebola Virus" class="img-rounded" width="550" align="middle">
+                <img src="img/seqident.png" alt="Ebola Virus" class="img-rounded" width="550" align="middle">
 
-            <br><br>
+                <br><br>
 
-            <p>Presently, the 2007 strand is only 97.02% similar to the 1976 outbreak. While that may not seem much, this difference corresponds to just over 560 nucleotides in difference.</p>
+                <p>Presently, the 2007 strand is only 97.02% similar to the 1976 outbreak. While that may not seem much, this difference corresponds to just over 560 nucleotides in difference.</p>
 
-            Using sequence divergence, we reproduced a calculation made by Gire 2014 in which they claimed there have been 8e-04 mutations/bp-year (mutations per basepair per year) in the Ebola virus genome. We replicated this calculation and performed similar analysis between each outbreak. Interestingly, it seems that the virus has mutated more quickly relative to other outbreaks by about 30%.
+                Using sequence divergence, we reproduced a calculation made by Gire 2014 in which they claimed there have been 8e-04 mutations/bp-year (mutations per basepair per year) in the Ebola virus genome. We replicated this calculation and performed similar analysis between each outbreak. Interestingly, it seems that the virus has mutated more quickly relative to other outbreaks by about 30%.
 
-            <br><br>
+                <br><br>
 
 
-            <img src="img/mutationplot.png" alt="Ebola Virus" class="img-rounded" width="550" align="middle">
+                <img src="img/mutationplot.png" alt="Ebola Virus" class="img-rounded" width="550" align="middle">
             </div>
         </div>
 
-    <div class="row">
-        <div class="col-md-6 title">
-            <h3> Where do changes occur?</h3>
-            <p>
-                Gire 2014 identified a number of significant protein changes across sequenced patients in Sierra Leon, illustrated in the table. The conserved region of the first 250 amino acids is observed in their findings as well, as the frequency of mutation is not shown.
+        <div class="row">
+            <div class="col-md-6 title">
+                <h3> Where do changes occur?</h3>
+                <p>
+                    Gire 2014 identified a number of significant protein changes across sequenced patients in Sierra Leon, illustrated in the table. The conserved region of the first 250 amino acids is observed in their findings as well, as the frequency of mutation is not shown.
 
-            </p>
-            <p>
-                Although we know now know how the Ebola virus has changed, we do not know the corresponding biological function to these mutations. Our discovery of non-conserved regions being the small regions of the Glycoprotein indictate a potential searching point for biomedical research. This is particularly alarming as a vaccine may be rendered ineffective quicker than expected - especially with such intrahost and interhost variation present in the current outbreak.
-            </p>
-            <p>
-                What was more interesting was when we did a tBLASTn for each protein sequence against the corresponding
-                gene segment for each strain of Ebola. Most of the proteins have 1% non-synonymous changes,
-                but the GP protein had a 5% change, while the VP30 protein was 100% conserved.
-            </p>
-        </div>
-        <div class="col-md-6 space-out">
-            <div id="chart"></div>
-            <script>
-                var chart = c3.generate({
-                    bindto: '#chart',
-                    data: {
-                        url: 'sequences/relative_protein_identity',
-                        type: 'bar'
-                    },
-                    axis: {
-                        x: {
-                            type: 'category',
-                            categories: ['NP','VP35','VP40','GP','sGP','ssGP','VP300','VP24','L']
+                </p>
+                <p>
+                    Although we know now know how the Ebola virus has changed, we do not know the corresponding biological function to these mutations. Our discovery of non-conserved regions being the small regions of the Glycoprotein indictate a potential searching point for biomedical research. This is particularly alarming as a vaccine may be rendered ineffective quicker than expected - especially with such intrahost and interhost variation present in the current outbreak.
+                </p>
+                <p>
+                    What was more interesting was when we did a tBLASTn for each protein sequence against the corresponding
+                    gene segment for each strain of Ebola. Most of the proteins have 1% non-synonymous changes,
+                    but the GP protein had a 5% change, while the VP30 protein was 100% conserved.
+                </p>
+            </div>
+            <div class="col-md-6 space-out">
+                <div id="chart"></div>
+                <script>
+                    var chart = c3.generate({
+                        bindto: '#chart',
+                        data: {
+                            url: 'sequences/relative_protein_identity',
+                            type: 'bar'
                         },
-                        y: {
-                            max: 99,
-                            min: 90
+                        axis: {
+                            x: {
+                                type: 'category',
+                                categories: ['NP','VP35','VP40','GP','sGP','ssGP','VP300','VP24','L']
+                            },
+                            y: {
+                                max: 99,
+                                min: 90
+                            }
+                        },
+                        legend: {
+                            show: false
                         }
-                    },
-                    legend: {
-                        show: false
-                    }
-                });
-            </script>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Strands</h3>
-
-            <p>The glycoprotein is the only part of Ebola which is exposed, whereas the VP30 is one of the most internal
-                proteins, responsible for transcription initiation and RNA stabilization.
-            </p>
-            <p>
-                Even more interesting was when we looked at where the changes in GP occurred, there were few changes
-                within the first 250 amino acids, and few changes after the 500th amino acid.
-                This indicated that perhaps certain regions of the glycoprotein were ‘intentionally’ changing while
-                others were ‘intentionally’ not changing.
-            </p>
-        </div>
-        <img style="padding-top: 5em; padding-left: 3em;" src="img/DNA_icon.svg" alt="Kiwi standing on oval">
-        <div class="col-md-6">
-
-        </div>
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-6">
-            <h3>Kitwit Comparison</h3>
-            <table class="table">
-                <tr>
-                    <th class="tg-031e">Sequence #</th>
-                    <th class="tg-031e">From</th>
-                    <th class="tg-031e">To</th>
-                    <th class="tg-031e">Number of Pateints</th>
-                </tr>
-                <tr>
-                    <td class="tg-031e">46</th>
-                    <td class="tg-031e">S</th>
-                    <td class="tg-031e">N</th>
-                    <td class="tg-031e">1</th>
-                </tr>
-                <tr>
-                    <td class="tg-031e">82</td>
-                    <td class="tg-031e">A</td>
-                    <td class="tg-031e">V</td>
-                    <td class="tg-031e">78</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">262</td>
-                    <td class="tg-031e">T</td>
-                    <td class="tg-031e">A</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">291</td>
-                    <td class="tg-031e">W</td>
-                    <td class="tg-031e">R</td>
-                    <td class="tg-031e">1</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">314</td>
-                    <td class="tg-031e">R</td>
-                    <td class="tg-031e">G</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">315</td>
-                    <td class="tg-031e">A</td>
-                    <td class="tg-031e">P</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">331</td>
-                    <td class="tg-031e">G</td>
-                    <td class="tg-031e">E</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">336</td>
-                    <td class="tg-031e">T</td>
-                    <td class="tg-031e">N</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">359</td>
-                    <td class="tg-031e">E</td>
-                    <td class="tg-031e">K</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">382</td>
-                    <td class="tg-031e">P</td>
-                    <td class="tg-031e">T</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">405</td>
-                    <td class="tg-031e">E</td>
-                    <td class="tg-031e">G</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">411</td>
-                    <td class="tg-031e">T</td>
-                    <td class="tg-031e">A</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">440</td>
-                    <td class="tg-031e">G</td>
-                    <td class="tg-031e">S</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">441</td>
-                    <td class="tg-031e">T</td>
-                    <td class="tg-031e">A</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">443</td>
-                    <td class="tg-031e">L</td>
-                    <td class="tg-031e">S</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">446</td>
-                    <td class="tg-031e">P</td>
-                    <td class="tg-031e">L</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">455</td>
-                    <td class="tg-031e">H</td>
-                    <td class="tg-031e">Y</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">499</td>
-                    <td class="tg-031e">A</td>
-                    <td class="tg-031e">T</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-                <tr>
-                    <td class="tg-031e">503</td>
-                    <td class="tg-031e">A</td>
-                    <td class="tg-031e">V</td>
-                    <td class="tg-031e">81</td>
-                </tr>
-            </table>
+                    });
+                </script>
+            </div>
         </div>
 
-        <div class="col-md-6">
-            <h3>Mayinga comparison</h3>
-            <table class="table">
-                <tr>
-                    <th class="tg-031e">Sequence #</th>
-                    <th class="tg-031e">From</th>
-                    <th class="tg-031e">To</th>
-                    <th class="tg-031e">Number of Pateints</th>
-                </tr>
-                <tr>
-                    <td>46</td>
-                    <td>S</td>
-                    <td>N</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>82</td>
-                    <td>A</td>
-                    <td>V</td>
-                    <td>78</td>
-                </tr>
-                <tr>
-                    <td>262</td>
-                    <td>T</td>
-                    <td>A</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>291</td>
-                    <td>W</td>
-                    <td>R</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>310</td>
-                    <td>V</td>
-                    <td>A</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>315</td>
-                    <td>A</td>
-                    <td>P</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>331</td>
-                    <td>G</td>
-                    <td>E</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>336</td>
-                    <td>T</td>
-                    <td>N</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>359</td>
-                    <td>E</td>
-                    <td>K</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>377</td>
-                    <td>S</td>
-                    <td>P</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>378</td>
-                    <td>L</td>
-                    <td>P</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>382</td>
-                    <td>P</td>
-                    <td>T</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>405</td>
-                    <td>E</td>
-                    <td>G</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>411</td>
-                    <td>T</td>
-                    <td>A</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>422</td>
-                    <td>S</td>
-                    <td>P</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>430</td>
-                    <td>P</td>
-                    <td>L</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>441</td>
-                    <td>T</td>
-                    <td>A</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>443</td>
-                    <td>F</td>
-                    <td>S</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>446</td>
-                    <td>P</td>
-                    <td>L</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>455</td>
-                    <td>H</td>
-                    <td>Y</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>503</td>
-                    <td>A</td>
-                    <td>V</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>544</td>
-                    <td>I</td>
-                    <td>T</td>
-                    <td>81</td>
-                </tr>
-            </table>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-md-6">
-            <h3>3D Structure Analysis</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Strands</h3>
 
-            <p>A look at the 3D structure of the GP as well as a detailed paper about the mechanism provided some
-                possibilities. Most of the glycoprotein is protected by a mucin-like domain and is therefore
-                impossible to target with antibodies. The parts which were changing corresponded to the parts of the
-                glycoprotein which are exposed to attack by antibodies. A crystal structure is available with the GP
-                complex bound to antibodies from a survivor.
-            </p>
-            <p>
-                Furthermore, a one base frame shift allows Ebola to produce many copies of ‘ssGP’, a piece of GP
-                corresponding to just this domain, which could act as a decoy in absorbing the body’s antibodies.
-            </p>
-        </div>
-        <div class="col-md-6">
-            <div id="glmol01"></div>
-            <textarea id="glmol01_src" style="display: none;"></textarea>
-        </div>
-    </div>
-
-
-
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Taxonomy</h3>
-            <p>
-                There are five strands of ebolavirus recognized by the International Committee on Taxonomy of Viruses:
-                Ebola virus (EBOV), Sudan virus (SUDV), Reston virus (RESTV), Taï Forest virus (TAFV), and Bundibugyo
-                virus (BDBV). Despite the large number of outbreaks over the past 40 years, we focus our analysis on
-                Ebola virus and outbreaks in Zaire (1976), Zaire (1995), Democractic Republic of the Congo (2007), and
-                Sierra Leon (2014).
-            </p>
-            <p>
-                The World Health Organization reports 15,351 Ebola cases with 5,459 deaths across eight countries so
-                far in this current outbreak. Amongst the outbreak, Stephen Gire and 49 others published Genomic
-                surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak in Science this
-                August and made publicly available 99 fully sequenced Ebola virus genomes from 78 patients in Sierra Leon.
-            </p>
-            <p>
-                We perform an exploratory analysis in attempt to find functional consequences to the changes present in
-                the current strand of Ebola virus.
-            </p>
-        </div>
-        <div class="col-md-6">
-            <div id='dashboard' align="center">
+                <p>The glycoprotein is the only part of Ebola which is exposed, whereas the VP30 is one of the most internal
+                    proteins, responsible for transcription initiation and RNA stabilization.
+                </p>
+                <p>
+                    Even more interesting was when we looked at where the changes in GP occurred, there were few changes
+                    within the first 250 amino acids, and few changes after the 500th amino acid.
+                    This indicated that perhaps certain regions of the glycoprotein were ‘intentionally’ changing while
+                    others were ‘intentionally’ not changing.
+                </p>
+            </div>
+            <img style="padding-top: 5em; padding-left: 3em;" src="img/DNA_icon.svg" alt="Kiwi standing on oval">
+            <div class="col-md-6">
 
             </div>
-            <script>
-                var freqData=[
-                    {State:'Zaire(1976)',freq:{deaths:280, survivors:38}}
-                    ,{State:'Zaire(1995)',freq:{deaths:254, survivors:61}}
-                    ,{State:'D.R.Congo(2007)',freq:{deaths:187, survivors:77}}
-                    ,{State:'S.L.(2014)',freq:{deaths:1267, survivors:4923}}
-                ];
+        </div>
 
-                dashboard('#dashboard',freqData);
-                function dashboard(id, fData){
-                    var barColor = 'steelblue';
-                    function segColor(c){ return {deaths:"#ba807d", survivors:"#7db7ba"}[c]; }
+        <div class="row">
 
-                    // compute total for each state.
-                    fData.forEach(function(d){d.total=d.freq.survivors+d.freq.deaths;});
+            <div class="col-md-6">
+                <h3>Kitwit Comparison</h3>
+                <table class="table">
+                    <tr>
+                        <th class="tg-031e">Sequence #</th>
+                        <th class="tg-031e">From</th>
+                        <th class="tg-031e">To</th>
+                        <th class="tg-031e">Number of Pateints</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">46</th>
+                        <td class="tg-031e">S</th>
+                        <td class="tg-031e">N</th>
+                        <td class="tg-031e">1</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">82</td>
+                        <td class="tg-031e">A</td>
+                        <td class="tg-031e">V</td>
+                        <td class="tg-031e">78</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">262</td>
+                        <td class="tg-031e">T</td>
+                        <td class="tg-031e">A</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">291</td>
+                        <td class="tg-031e">W</td>
+                        <td class="tg-031e">R</td>
+                        <td class="tg-031e">1</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">314</td>
+                        <td class="tg-031e">R</td>
+                        <td class="tg-031e">G</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">315</td>
+                        <td class="tg-031e">A</td>
+                        <td class="tg-031e">P</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">331</td>
+                        <td class="tg-031e">G</td>
+                        <td class="tg-031e">E</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">336</td>
+                        <td class="tg-031e">T</td>
+                        <td class="tg-031e">N</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">359</td>
+                        <td class="tg-031e">E</td>
+                        <td class="tg-031e">K</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">382</td>
+                        <td class="tg-031e">P</td>
+                        <td class="tg-031e">T</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">405</td>
+                        <td class="tg-031e">E</td>
+                        <td class="tg-031e">G</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">411</td>
+                        <td class="tg-031e">T</td>
+                        <td class="tg-031e">A</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">440</td>
+                        <td class="tg-031e">G</td>
+                        <td class="tg-031e">S</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">441</td>
+                        <td class="tg-031e">T</td>
+                        <td class="tg-031e">A</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">443</td>
+                        <td class="tg-031e">L</td>
+                        <td class="tg-031e">S</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">446</td>
+                        <td class="tg-031e">P</td>
+                        <td class="tg-031e">L</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">455</td>
+                        <td class="tg-031e">H</td>
+                        <td class="tg-031e">Y</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">499</td>
+                        <td class="tg-031e">A</td>
+                        <td class="tg-031e">T</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-031e">503</td>
+                        <td class="tg-031e">A</td>
+                        <td class="tg-031e">V</td>
+                        <td class="tg-031e">81</td>
+                    </tr>
+                </table>
+            </div>
 
-                    // function to handle histogram.
-                    function histoGram(fD){
-                        var hG={},    hGDim = {t: 60, r: 0, b: 30, l: 0};
-                        hGDim.w = 500 - hGDim.l - hGDim.r,
-                                hGDim.h = 300 - hGDim.t - hGDim.b;
+            <div class="col-md-6">
+                <h3>Mayinga comparison</h3>
+                <table class="table">
+                    <tr>
+                        <th class="tg-031e">Sequence #</th>
+                        <th class="tg-031e">From</th>
+                        <th class="tg-031e">To</th>
+                        <th class="tg-031e">Number of Pateints</th>
+                    </tr>
+                    <tr>
+                        <td>46</td>
+                        <td>S</td>
+                        <td>N</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>82</td>
+                        <td>A</td>
+                        <td>V</td>
+                        <td>78</td>
+                    </tr>
+                    <tr>
+                        <td>262</td>
+                        <td>T</td>
+                        <td>A</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>291</td>
+                        <td>W</td>
+                        <td>R</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>310</td>
+                        <td>V</td>
+                        <td>A</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>315</td>
+                        <td>A</td>
+                        <td>P</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>331</td>
+                        <td>G</td>
+                        <td>E</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>336</td>
+                        <td>T</td>
+                        <td>N</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>359</td>
+                        <td>E</td>
+                        <td>K</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>377</td>
+                        <td>S</td>
+                        <td>P</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>378</td>
+                        <td>L</td>
+                        <td>P</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>382</td>
+                        <td>P</td>
+                        <td>T</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>405</td>
+                        <td>E</td>
+                        <td>G</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>411</td>
+                        <td>T</td>
+                        <td>A</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>422</td>
+                        <td>S</td>
+                        <td>P</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>430</td>
+                        <td>P</td>
+                        <td>L</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>441</td>
+                        <td>T</td>
+                        <td>A</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>443</td>
+                        <td>F</td>
+                        <td>S</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>446</td>
+                        <td>P</td>
+                        <td>L</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>455</td>
+                        <td>H</td>
+                        <td>Y</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>503</td>
+                        <td>A</td>
+                        <td>V</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>544</td>
+                        <td>I</td>
+                        <td>T</td>
+                        <td>81</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
 
-                        //create svg for histogram.
-                        var hGsvg = d3.select(id).append("svg")
-                                .attr("width", hGDim.w + hGDim.l + hGDim.r)
-                                .attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
-                                .attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")");
+        <div class="row">
+            <div class="col-md-6">
+                <h3>3D Structure Analysis</h3>
 
-                        // create function for x-axis mapping.
-                        var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
-                                .domain(fD.map(function(d) { return d[0]; }));
+                <p>A look at the 3D structure of the GP as well as a detailed paper about the mechanism provided some
+                    possibilities. Most of the glycoprotein is protected by a mucin-like domain and is therefore
+                    impossible to target with antibodies. The parts which were changing corresponded to the parts of the
+                    glycoprotein which are exposed to attack by antibodies. A crystal structure is available with the GP
+                    complex bound to antibodies from a survivor.
+                </p>
+                <p>
+                    Furthermore, a one base frame shift allows Ebola to produce many copies of ‘ssGP’, a piece of GP
+                    corresponding to just this domain, which could act as a decoy in absorbing the body’s antibodies.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div id="glmol01"></div>
+                <textarea id="glmol01_src" style="display: none;"></textarea>
+            </div>
+        </div>
 
-                        // Add x-axis to the histogram svg.
-                        hGsvg.append("g").attr("class", "x axis")
-                                .attr("transform", "translate(0," + hGDim.h + ")")
-                                .call(d3.svg.axis().scale(x).orient("bottom"));
 
-                        // Create function for y-axis map.
-                        var y = d3.scale.linear().range([hGDim.h, 0])
-                                .domain([0, d3.max(fD, function(d) { return d[1]; })]);
 
-                        // Create bars for histogram to contain rectangles and freq labels.
-                        var bars = hGsvg.selectAll(".bar").data(fD).enter()
-                                .append("g").attr("class", "bar");
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Taxonomy</h3>
+                <p>
+                    There are five strands of ebolavirus recognized by the International Committee on Taxonomy of Viruses:
+                    Ebola virus (EBOV), Sudan virus (SUDV), Reston virus (RESTV), Taï Forest virus (TAFV), and Bundibugyo
+                    virus (BDBV). Despite the large number of outbreaks over the past 40 years, we focus our analysis on
+                    Ebola virus and outbreaks in Zaire (1976), Zaire (1995), Democractic Republic of the Congo (2007), and
+                    Sierra Leon (2014).
+                </p>
+                <p>
+                    The World Health Organization reports 15,351 Ebola cases with 5,459 deaths across eight countries so
+                    far in this current outbreak. Amongst the outbreak, Stephen Gire and 49 others published Genomic
+                    surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak in Science this
+                    August and made publicly available 99 fully sequenced Ebola virus genomes from 78 patients in Sierra Leon.
+                </p>
+                <p>
+                    We perform an exploratory analysis in attempt to find functional consequences to the changes present in
+                    the current strand of Ebola virus.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div id='dashboard' align="center">
 
-                        //create the rectangles.
-                        bars.append("rect")
-                                .attr("x", function(d) { return x(d[0]); })
-                                .attr("y", function(d) { return y(d[1]); })
-                                .attr("width", x.rangeBand())
-                                .attr("height", function(d) { return hGDim.h - y(d[1]); })
-                                .attr('fill',barColor)
-                                .on("mouseover",mouseover)// mouseover is defined below.
-                                .on("mouseout",mouseout);// mouseout is defined below.
+                </div>
+                <script>
+                    var freqData=[
+                        {State:'Zaire(1976)',freq:{deaths:280, survivors:38}}
+                        ,{State:'Zaire(1995)',freq:{deaths:254, survivors:61}}
+                        ,{State:'D.R.Congo(2007)',freq:{deaths:187, survivors:77}}
+                        ,{State:'S.L.(2014)',freq:{deaths:1267, survivors:4923}}
+                    ];
 
-                        //Create the frequency labels above the rectangles.
-                        bars.append("text").text(function(d){ return d3.format(",")(d[1])})
-                                .attr("x", function(d) { return x(d[0])+x.rangeBand()/2; })
-                                .attr("y", function(d) { return y(d[1])-5; })
-                                .attr("text-anchor", "middle");
+                    dashboard('#dashboard',freqData);
+                    function dashboard(id, fData){
+                        var barColor = 'steelblue';
+                        function segColor(c){ return {deaths:"#ba807d", survivors:"#7db7ba"}[c]; }
 
-                        function mouseover(d){  // utility function to be called on mouseover.
-                            // filter for selected state.
-                            var st = fData.filter(function(s){ return s.State == d[0];})[0],
-                                    nD = d3.keys(st.freq).map(function(s){ return {type:s, freq:st.freq[s]};});
+                        // compute total for each state.
+                        fData.forEach(function(d){d.total=d.freq.survivors+d.freq.deaths;});
 
-                            // call update functions of pie-chart and legend.
-                            pC.update(nD);
-                            leg.update(nD);
-                        }
+                        // function to handle histogram.
+                        function histoGram(fD){
+                            var hG={},    hGDim = {t: 60, r: 0, b: 30, l: 0};
+                            hGDim.w = 500 - hGDim.l - hGDim.r,
+                                    hGDim.h = 300 - hGDim.t - hGDim.b;
 
-                        function mouseout(d){    // utility function to be called on mouseout.
-                            // reset the pie-chart and legend.
-                            pC.update(tF);
-                            leg.update(tF);
-                        }
+                            //create svg for histogram.
+                            var hGsvg = d3.select(id).append("svg")
+                                    .attr("width", hGDim.w + hGDim.l + hGDim.r)
+                                    .attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
+                                    .attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")");
 
-                        // create function to update the bars. This will be used by pie-chart.
-                        hG.update = function(nD, color){
-                            // update the domain of the y-axis map to reflect change in frequencies.
-                            y.domain([0, d3.max(nD, function(d) { return d[1]; })]);
+                            // create function for x-axis mapping.
+                            var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
+                                    .domain(fD.map(function(d) { return d[0]; }));
 
-                            // Attach the new data to the bars.
-                            var bars = hGsvg.selectAll(".bar").data(nD);
+                            // Add x-axis to the histogram svg.
+                            hGsvg.append("g").attr("class", "x axis")
+                                    .attr("transform", "translate(0," + hGDim.h + ")")
+                                    .call(d3.svg.axis().scale(x).orient("bottom"));
 
-                            // transition the height and color of rectangles.
-                            bars.select("rect").transition().duration(500)
-                                    .attr("y", function(d) {return y(d[1]); })
+                            // Create function for y-axis map.
+                            var y = d3.scale.linear().range([hGDim.h, 0])
+                                    .domain([0, d3.max(fD, function(d) { return d[1]; })]);
+
+                            // Create bars for histogram to contain rectangles and freq labels.
+                            var bars = hGsvg.selectAll(".bar").data(fD).enter()
+                                    .append("g").attr("class", "bar");
+
+                            //create the rectangles.
+                            bars.append("rect")
+                                    .attr("x", function(d) { return x(d[0]); })
+                                    .attr("y", function(d) { return y(d[1]); })
+                                    .attr("width", x.rangeBand())
                                     .attr("height", function(d) { return hGDim.h - y(d[1]); })
-                                    .attr("fill", color);
+                                    .attr('fill',barColor)
+                                    .on("mouseover",mouseover)// mouseover is defined below.
+                                    .on("mouseout",mouseout);// mouseout is defined below.
 
-                            // transition the frequency labels location and change value.
-                            bars.select("text").transition().duration(500)
-                                    .text(function(d){ return d3.format(",")(d[1])})
-                                    .attr("y", function(d) {return y(d[1])-5; });
+                            //Create the frequency labels above the rectangles.
+                            bars.append("text").text(function(d){ return d3.format(",")(d[1])})
+                                    .attr("x", function(d) { return x(d[0])+x.rangeBand()/2; })
+                                    .attr("y", function(d) { return y(d[1])-5; })
+                                    .attr("text-anchor", "middle");
+
+                            function mouseover(d){  // utility function to be called on mouseover.
+                                // filter for selected state.
+                                var st = fData.filter(function(s){ return s.State == d[0];})[0],
+                                        nD = d3.keys(st.freq).map(function(s){ return {type:s, freq:st.freq[s]};});
+
+                                // call update functions of pie-chart and legend.
+                                pC.update(nD);
+                                leg.update(nD);
+                            }
+
+                            function mouseout(d){    // utility function to be called on mouseout.
+                                // reset the pie-chart and legend.
+                                pC.update(tF);
+                                leg.update(tF);
+                            }
+
+                            // create function to update the bars. This will be used by pie-chart.
+                            hG.update = function(nD, color){
+                                // update the domain of the y-axis map to reflect change in frequencies.
+                                y.domain([0, d3.max(nD, function(d) { return d[1]; })]);
+
+                                // Attach the new data to the bars.
+                                var bars = hGsvg.selectAll(".bar").data(nD);
+
+                                // transition the height and color of rectangles.
+                                bars.select("rect").transition().duration(500)
+                                        .attr("y", function(d) {return y(d[1]); })
+                                        .attr("height", function(d) { return hGDim.h - y(d[1]); })
+                                        .attr("fill", color);
+
+                                // transition the frequency labels location and change value.
+                                bars.select("text").transition().duration(500)
+                                        .text(function(d){ return d3.format(",")(d[1])})
+                                        .attr("y", function(d) {return y(d[1])-5; });
+                            }
+                            return hG;
                         }
-                        return hG;
+
+                        // function to handle pieChart.
+                        function pieChart(pD){
+                            var pC ={},    pieDim ={w:250, h: 250};
+                            pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
+
+                            // create svg for pie chart.
+                            var piesvg = d3.select(id).append("svg")
+                                    .attr("width", pieDim.w).attr("height", pieDim.h).append("g")
+                                    .attr("transform", "translate("+pieDim.w/2+","+pieDim.h/2+")");
+
+                            // create function to draw the arcs of the pie slices.
+                            var arc = d3.svg.arc().outerRadius(pieDim.r - 10).innerRadius(0);
+
+                            // create a function to compute the pie slice angles.
+                            var pie = d3.layout.pie().sort(null).value(function(d) { return d.freq; });
+
+                            // Draw the pie slices.
+                            piesvg.selectAll("path").data(pie(pD)).enter().append("path").attr("d", arc)
+                                    .each(function(d) { this._current = d; })
+                                    .style("fill", function(d) { return segColor(d.data.type); })
+                                    .on("mouseover",mouseover).on("mouseout",mouseout);
+
+                            // create function to update pie-chart. This will be used by histogram.
+                            pC.update = function(nD){
+                                piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
+                                        .attrTween("d", arcTween);
+                            }
+                            // Utility function to be called on mouseover a pie slice.
+                            function mouseover(d){
+                                // call the update function of histogram with new data.
+                                hG.update(fData.map(function(v){
+                                    return [v.State,v.freq[d.data.type]];}),segColor(d.data.type));
+                            }
+                            //Utility function to be called on mouseout a pie slice.
+                            function mouseout(d){
+                                // call the update function of histogram with all data.
+                                hG.update(fData.map(function(v){
+                                    return [v.State,v.total];}), barColor);
+                            }
+                            // Animating the pie-slice requiring a custom function which specifies
+                            // how the intermediate paths should be drawn.
+                            function arcTween(a) {
+                                var i = d3.interpolate(this._current, a);
+                                this._current = i(0);
+                                return function(t) { return arc(i(t));    };
+                            }
+                            return pC;
+                        }
+
+                        // function to handle legend.
+                        function legend(lD){
+                            var leg = {};
+
+                            // create table for legend.
+                            var legend = d3.select(id).append("table").attr('class','legend');
+
+                            // create one row per segment.
+                            var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
+
+                            // create the first column for each segment.
+                            tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
+                                    .attr("width", '16').attr("height", '16')
+                                    .attr("fill",function(d){ return segColor(d.type); });
+
+                            // create the second column for each segment.
+                            tr.append("td").text(function(d){ return d.type;});
+
+                            // create the third column for each segment.
+                            tr.append("td").attr("class",'legendFreq')
+                                    .text(function(d){ return d3.format(",")(d.freq);});
+
+                            // create the fourth column for each segment.
+                            tr.append("td").attr("class",'legendPerc')
+                                    .text(function(d){ return getLegend(d,lD);});
+
+                            // Utility function to be used to update the legend.
+                            leg.update = function(nD){
+                                // update the data attached to the row elements.
+                                var l = legend.select("tbody").selectAll("tr").data(nD);
+
+                                // update the frequencies.
+                                l.select(".legendFreq").text(function(d){ return d3.format(",")(d.freq);});
+
+                                // update the percentage column.
+                                l.select(".legendPerc").text(function(d){ return getLegend(d,nD);});
+                            }
+
+                            function getLegend(d,aD){ // Utility function to compute percentage.
+                                return d3.format("%")(d.freq/d3.sum(aD.map(function(v){ return v.freq; })));
+                            }
+
+                            return leg;
+                        }
+
+                        // calculate total frequency by segment for all state.
+                        var tF = ['deaths','survivors'].map(function(d){
+                            return {type:d, freq: d3.sum(fData.map(function(t){ return t.freq[d];}))};
+                        });
+
+                        // calculate total frequency by state for all segment.
+                        var sF = fData.map(function(d){return [d.State,d.total];});
+
+                        var hG = histoGram(sF), // create the histogram.
+                                pC = pieChart(tF), // create the pie-chart.
+                                leg= legend(tF);  // create the legend.
                     }
+                </script>
+                <p><h6>Total cases and deaths corresponding to four major outbreaks of Ebola virus. From left to right: Zaire, 1976, 318 reported cases with 88%
+                fatality; Zaire, 1995, 315 reported cases with 81% fataility; Democratic Republic of Congo, 2007, 264 reported cases with 71% fatality;
+                Sierra Leon, 2014, 6190 reported cases with 20% fatality.</h6>
 
-                    // function to handle pieChart.
-                    function pieChart(pD){
-                        var pC ={},    pieDim ={w:250, h: 250};
-                        pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
+                </p>
+            </div>
+        </div>
 
-                        // create svg for pie chart.
-                        var piesvg = d3.select(id).append("svg")
-                                .attr("width", pieDim.w).attr("height", pieDim.h).append("g")
-                                .attr("transform", "translate("+pieDim.w/2+","+pieDim.h/2+")");
-
-                        // create function to draw the arcs of the pie slices.
-                        var arc = d3.svg.arc().outerRadius(pieDim.r - 10).innerRadius(0);
-
-                        // create a function to compute the pie slice angles.
-                        var pie = d3.layout.pie().sort(null).value(function(d) { return d.freq; });
-
-                        // Draw the pie slices.
-                        piesvg.selectAll("path").data(pie(pD)).enter().append("path").attr("d", arc)
-                                .each(function(d) { this._current = d; })
-                                .style("fill", function(d) { return segColor(d.data.type); })
-                                .on("mouseover",mouseover).on("mouseout",mouseout);
-
-                        // create function to update pie-chart. This will be used by histogram.
-                        pC.update = function(nD){
-                            piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
-                                    .attrTween("d", arcTween);
-                        }
-                        // Utility function to be called on mouseover a pie slice.
-                        function mouseover(d){
-                            // call the update function of histogram with new data.
-                            hG.update(fData.map(function(v){
-                                return [v.State,v.freq[d.data.type]];}),segColor(d.data.type));
-                        }
-                        //Utility function to be called on mouseout a pie slice.
-                        function mouseout(d){
-                            // call the update function of histogram with all data.
-                            hG.update(fData.map(function(v){
-                                return [v.State,v.total];}), barColor);
-                        }
-                        // Animating the pie-slice requiring a custom function which specifies
-                        // how the intermediate paths should be drawn.
-                        function arcTween(a) {
-                            var i = d3.interpolate(this._current, a);
-                            this._current = i(0);
-                            return function(t) { return arc(i(t));    };
-                        }
-                        return pC;
-                    }
-
-                    // function to handle legend.
-                    function legend(lD){
-                        var leg = {};
-
-                        // create table for legend.
-                        var legend = d3.select(id).append("table").attr('class','legend');
-
-                        // create one row per segment.
-                        var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
-
-                        // create the first column for each segment.
-                        tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
-                                .attr("width", '16').attr("height", '16')
-                                .attr("fill",function(d){ return segColor(d.type); });
-
-                        // create the second column for each segment.
-                        tr.append("td").text(function(d){ return d.type;});
-
-                        // create the third column for each segment.
-                        tr.append("td").attr("class",'legendFreq')
-                                .text(function(d){ return d3.format(",")(d.freq);});
-
-                        // create the fourth column for each segment.
-                        tr.append("td").attr("class",'legendPerc')
-                                .text(function(d){ return getLegend(d,lD);});
-
-                        // Utility function to be used to update the legend.
-                        leg.update = function(nD){
-                            // update the data attached to the row elements.
-                            var l = legend.select("tbody").selectAll("tr").data(nD);
-
-                            // update the frequencies.
-                            l.select(".legendFreq").text(function(d){ return d3.format(",")(d.freq);});
-
-                            // update the percentage column.
-                            l.select(".legendPerc").text(function(d){ return getLegend(d,nD);});
-                        }
-
-                        function getLegend(d,aD){ // Utility function to compute percentage.
-                            return d3.format("%")(d.freq/d3.sum(aD.map(function(v){ return v.freq; })));
-                        }
-
-                        return leg;
-                    }
-
-                    // calculate total frequency by segment for all state.
-                    var tF = ['deaths','survivors'].map(function(d){
-                        return {type:d, freq: d3.sum(fData.map(function(t){ return t.freq[d];}))};
-                    });
-
-                    // calculate total frequency by state for all segment.
-                    var sF = fData.map(function(d){return [d.State,d.total];});
-
-                    var hG = histoGram(sF), // create the histogram.
-                            pC = pieChart(tF), // create the pie-chart.
-                            leg= legend(tF);  // create the legend.
-                }
-            </script>
-            <p><h6>Total cases and deaths corresponding to four major outbreaks of Ebola virus. From left to right: Zaire, 1976, 318 reported cases with 88%
-            fatality; Zaire, 1995, 315 reported cases with 81% fataility; Democratic Republic of Congo, 2007, 264 reported cases with 71% fatality;
-            Sierra Leon, 2014, 6190 reported cases with 20% fatality.</h6>
-
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Conserved Regions</h3>
+                <p>
+                    Our results show that there are two sections which are conserved and this image shows conserved domains from amino acids 557 to 629.
+                </p><p>
+                This image shows conserved domains from amino acid 557 to 629. Immediately appearent is the commonalities with other viruses, including HIV, such as the immunosuppressive region. The HR domains are conserved within different Ebola virus species. HR domains are responsible for for fusion with the host cell membrane - when folded, they form the core of the glycoprotein complex and, when activated, extend to grab onto host cell membranes.
             </p>
+            </div>
+            <div class="col-md-6">
+                <img style="padding-top: 5em;" src="img/HRdomain.png" alt="Domain" class="img-rounded">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 sequence">
+                <img src="img/matrix.png" alt="Ebola Virus" class="img-rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 sequence">
+                <p>
+                    The other conserved region is the glycan protected region which give the virus protection from antibodies. The first 250 amino acids of this region have seen no change from 1976 to 2014. This domain is protected in vitro by glycans, and seems to mediate binding to the host cell via a receptor, but the exact mechanism is still unknown.
+                </p>
+            </div>
+            <div class="col-md-6 sequence">
+                <img src="img/glycan.png" alt="Ebola Virus" class="img-rounded">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Nonconserved Regions</h3>
+                <p>The areas of the glycoprotein which have changed are the small regions exposed to binding by antibodies. Below is the crystal structure of Ebola GP bound to antibodies from a human survivor from the 1995 Kitwit outbreak. The yellow is the GP core, while the green are antibodies.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div id="glmol02"></div>
+                <textarea id="glmol02_src" style="display: none;"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Consensus sequence</h3>
+                <p>We wrote a MATLAB script to generate a consensus sequence from clustal omega multiple sequence alignments to generate a consensus sequence of the Ebola virus across our studied outbreaks. The script is currently written with the assumption that alignment was performed on four sequences; however, it may be easily generalized to generate consensus sequences for a different number. </p>
+                <button onclick="location.href='data/consensus/consensus.m'">
+                    Matlab Script</button>
+                <button onclick="location.href='data/consensus/consensus.txt'">
+                    Sequence</button>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Future Work</h3>
+                <p>
+                    While our main focus was on the significantly high rate of change in GP, it might be interesting to look at the conserved nature of VP30. As a transcription factor, it makes sense that it would have to stay the same, assuming the initiation motif was the same. A motif search on the non-coding regions of the genome could be used to see if certain binding motifs have also stayed the same across the different strains.
+                </p>
+                <p>The L protein is the largest protein, and is the RNA dependant RNA polymerase. While the percent change in amino acids is not unusual, this amounts to 30 different residues. This could be typical of viruses, where low fidelity in the copy mechanism allows faster evolution. How Ebola controls which proteins are subject to repair and which are left to evolve could have to do with their relative locations in the capsid.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <h3>References</h3>
+                <ul>
+                    <li>http://bl.ocks.org/mbostock</li>
+                    <li>http://www.rcsb.org/pdb/101/motm.do?momID=178</li>
+                    <li>http://jvi.asm.org/content/82/24/12569.full</li>
+                    <li>http://jid.oxfordjournals.org/content/196/Supplement_2/S284.full</li>
+                    <li>Future Virol. 2009; 4(6): 621ñ635.</li>
+                    <li>http://www.cdc.gov/vhf/ebola/outbreaks/2014-west-africa/index.html</li>
+                    <li>http://viralzone.expasy.org/all_by_species/207.html</li>
+                    <li>http://news.harvard.edu/gazette/story/2014/08/ebola-genomes-sequenced/</li>
+                    <li>http://www.ncbi.nlm.nih.gov/bioproject/PRJNA257197</li>
+                    <li>http://en.wikipedia.org/wiki/List_of_Ebola_outbreaks</li>
+                    <li>http://www.rcsb.org/pdb/explore.do?structureId=2EBO</li>
+                    <li>http://www.rcsb.org/pdb/explore.do?structureId=3CSY</li>
+                    <li>http://www.rcsb.org/pdb/explore.do?structureId=1EBO</li>
+                    <li>http://en.wikipedia.org/wiki/List_of_Ebola_outbreaks</li>
+                    <li>http://www.plospathogens.org/article/info%3Adoi%2F10.1371%2Fjournal.ppat.1002847</li>
+                    <li>http://www-als.lbl.gov/index.php/contact/163-structure-of-the-ebola-virus-glycoprotein-bound-to-an-antibody-from-a-human-survivor.html</li>
+                    <li>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2829775/</li>
+                    <li>http://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi</li>
+                    <li>http://apps.who.int/iris/bitstream/10665/141468/1/roadmapsitrep_12Nov2014_eng.pdf</li>
+                    <li>Sievers F, Wilm A, Dineen DG, Gibson TJ, Karplus K, Li W, Lopez R, McWilliam H, Remmert M, Söding J, Thompson JD, Higgins DG (2011). Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega. Molecular Systems Biology 7:539 doi:10.1038/msb.2011.75</li>
+                </ul>
+
+
+                <p class="timestamp">Page updated 2014-04-29 07:05 UTC.</p>
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Conserved Regions</h3>
-            <p>
-                Our results show that there are two sections which are conserved and this image shows conserved domains from amino acids 557 to 629.
-            </p><p>
-            This image shows conserved domains from amino acid 557 to 629. Immediately appearent is the commonalities with other viruses, including HIV, such as the immunosuppressive region. The HR domains are conserved within different Ebola virus species. HR domains are responsible for for fusion with the host cell membrane - when folded, they form the core of the glycoprotein complex and, when activated, extend to grab onto host cell membranes.
-        </p>
-        </div>
-        <div class="col-md-6">
-            <img style="padding-top: 5em;" src="img/HRdomain.png" alt="Domain" class="img-rounded">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12 sequence">
-            <img src="img/matrix.png" alt="Ebola Virus" class="img-rounded">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 sequence">
-            <p>
-                The other conserved region is the glycan protected region which give the virus protection from antibodies. The first 250 amino acids of this region have seen no change from 1976 to 2014. This domain is protected in vitro by glycans, and seems to mediate binding to the host cell via a receptor, but the exact mechanism is still unknown.
-            </p>
-        </div>
-        <div class="col-md-6 sequence">
-            <img src="img/glycan.png" alt="Ebola Virus" class="img-rounded">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Nonconserved Regions</h3>
-            <p>The areas of the glycoprotein which have changed are the small regions exposed to binding by antibodies. Below is the crystal structure of Ebola GP bound to antibodies from a human survivor from the 1995 Kitwit outbreak. The yellow is the GP core, while the green are antibodies.
-            </p>
-        </div>
-        <div class="col-md-6">
-            <div id="glmol02"></div>
-            <textarea id="glmol02_src" style="display: none;"></textarea>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Consensus sequence</h3>
-            <p>We wrote a MATLAB script to generate a consensus sequence from clustal omega multiple sequence alignments to generate a consensus sequence of the Ebola virus across our studied outbreaks. The script is currently written with the assumption that alignment was performed on four sequences; however, it may be easily generalized to generate consensus sequences for a different number. </p>
-            <button onclick="location.href='data/consensus/consensus.m'">
-                Matlab Script</button>
-            <button onclick="location.href='data/consensus/consensus.txt'">
-                Sequence</button>
-
-
-        </div>
-
-
-    </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Future Work</h3>
-            <p>
-                While our main focus was on the significantly high rate of change in GP, it might be interesting to look at the conserved nature of VP30. As a transcription factor, it makes sense that it would have to stay the same, assuming the initiation motif was the same. A motif search on the non-coding regions of the genome could be used to see if certain binding motifs have also stayed the same across the different strains.
-            </p>
-            <p>The L protein is the largest protein, and is the RNA dependant RNA polymerase. While the percent change in amino acids is not unusual, this amounts to 30 different residues. This could be typical of viruses, where low fidelity in the copy mechanism allows faster evolution. How Ebola controls which proteins are subject to repair and which are left to evolve could have to do with their relative locations in the capsid.
-            </p>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-md-12">
-
-            <h3>References</h3>
-            <ul>
-                <li>http://bl.ocks.org/mbostock</li>
-                <li>http://www.rcsb.org/pdb/101/motm.do?momID=178</li>
-                <li>http://jvi.asm.org/content/82/24/12569.full</li>
-                <li>http://jid.oxfordjournals.org/content/196/Supplement_2/S284.full</li>
-                <li>Future Virol. 2009; 4(6): 621ñ635.</li>
-                <li>http://www.cdc.gov/vhf/ebola/outbreaks/2014-west-africa/index.html</li>
-                <li>http://viralzone.expasy.org/all_by_species/207.html</li>
-                <li>http://news.harvard.edu/gazette/story/2014/08/ebola-genomes-sequenced/</li>
-                <li>http://www.ncbi.nlm.nih.gov/bioproject/PRJNA257197</li>
-                <li>http://en.wikipedia.org/wiki/List_of_Ebola_outbreaks</li>
-                <li>http://www.rcsb.org/pdb/explore.do?structureId=2EBO</li>
-                <li>http://www.rcsb.org/pdb/explore.do?structureId=3CSY</li>
-                <li>http://www.rcsb.org/pdb/explore.do?structureId=1EBO</li>
-                <li>http://en.wikipedia.org/wiki/List_of_Ebola_outbreaks</li>
-                <li>http://www.plospathogens.org/article/info%3Adoi%2F10.1371%2Fjournal.ppat.1002847</li>
-                <li>http://www-als.lbl.gov/index.php/contact/163-structure-of-the-ebola-virus-glycoprotein-bound-to-an-antibody-from-a-human-survivor.html</li>
-                <li>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2829775/</li>
-                <li>http://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi</li>
-                <li>http://apps.who.int/iris/bitstream/10665/141468/1/roadmapsitrep_12Nov2014_eng.pdf</li>
-                <li>Sievers F, Wilm A, Dineen DG, Gibson TJ, Karplus K, Li W, Lopez R, McWilliam H, Remmert M, Söding J, Thompson JD, Higgins DG (2011). Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega. Molecular Systems Biology 7:539 doi:10.1038/msb.2011.75</li>
-            </ul>
-
-
-            <p class="timestamp">Page updated 2014-04-29 07:05 UTC.</p>
-        </div>
-    </div>
-</div>
-
-<footer class="container">
-    <p><a class="codenomicon" title="Codenomicon - April 2014" href="http://www.codenomicon.com/">Codenomicon -
-        April 2014</a></p>
-</footer>
+    <footer class="container">
+        <p><a class="codenomicon" title="Codenomicon - April 2014" href="http://www.codenomicon.com/">Codenomicon -
+            April 2014</a></p>
+    </footer>
 </div>
 
 
