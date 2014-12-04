@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6882333a-2087-4aa2-afb1-7c572f1413f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/img/HRdomain.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/img/glycan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/Brendanplots/img/identity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/img/identity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/img/matrix.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/Brendanplots/img/mutations.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/img/mutations.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/consensus.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/consensus.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/Brendanplots/identity.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/Brendanplots/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mutations.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brendan/Brendanplots/mutations.tsv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="178aProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.416666" vertical-offset="9794" max-vertical-offset="10470">
+            <state vertical-scroll-proportion="14.392858" vertical-offset="1514" max-vertical-offset="10470">
               <caret line="692" column="0" selection-start-line="692" selection-start-column="0" selection-end-line="692" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -75,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4921875" vertical-offset="600" max-vertical-offset="3345">
-              <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="3345">
+              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -95,8 +79,8 @@
       <list>
         <option value="$PROJECT_DIR$/sequences/flare.json" />
         <option value="$PROJECT_DIR$/img/DNA_icon.svg" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -432,22 +416,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="3345">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.416666" vertical-offset="9794" max-vertical-offset="10470">
+        <state vertical-scroll-proportion="14.392858" vertical-offset="1514" max-vertical-offset="10470">
           <caret line="692" column="0" selection-start-line="692" selection-start-column="0" selection-end-line="692" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#1;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4921875" vertical-offset="600" max-vertical-offset="3345">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
