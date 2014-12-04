@@ -60,7 +60,7 @@
 <div id="test" class="container">
     <h1>Illustrating evolution of EBOV Glycoprotein</h1>
 
-    <h2>Brendan, Zeevy, Eden</h2>
+    <h2>Brandon, Zeevy, Eden</h2>
 
     <div class="row">
 
@@ -125,115 +125,13 @@
         </div>
     </div>
 
-    <<<<<<< HEAD
-    =======
-    <hr/>
-
-    <div class="row">
-        <div class="col-md-12">
-            <h3>Strands</h3>
-
-            <p>There are five strands of ebolavirus recognized by the International Committee on Taxonomy of Viruses:
-                Ebola virus (EBOV), Sudan virus (SUDV), Reston virus (RESTV), Taï Forest virus (TAFV), and Bundibugyo
-                virus (BDBV). Despite the large number of outbreaks over the past 40 years, we focus our analysis on
-                Ebola virus and outbreaks in Zaire (1976), Zaire (1995), Democractic Republic of the Congo (2007), and
-                Sierra Leon (2014).
-                <br>
-                The World Health Organization reports 15,351 Ebola cases with 5,459 deaths across eight countries so far
-                in this current outbreak. Amongst the outbreak, Stephen Gire and 49 others published <i>Genomic
-                    surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak</i> in Science
-                this August and made publicly available 99 fully sequenced Ebola virus genomes from 78 patients in
-                Sierra Leon.
-            </p>
-        </div>
-        <div class="col-md-12">
-            <div id='dashboard' align="center">
-            </div>
-            <script src="http://d3js.org/d3.v3.min.js"></script>
-            <script src="js/c3.min.js"></script>
-            <script src="js/charts/first.js"></script>
-            <script>
-                var freqData = [
-                    {State: 'Zaire(1976)', freq: {deaths: 280, survivors: 38}}
-                    , {State: 'Zaire(1995)', freq: {deaths: 254, survivors: 61}}
-                    , {State: 'D.R.Congo(2007)', freq: {deaths: 187, survivors: 77}}
-                    , {State: 'S.L.(2014)', freq: {deaths: 1267, survivors: 4923}}
-                ];
-                dashboard('#dashboard', freqData);
-            </script>
-        </div>
-    </div>
-
-    <br>
-
-    <p align="center">Total cases and deaths corresponding to four major outbreaks of Ebola virus. <br>From left to right: Zaire, 1976; Zaire, 1995; Democratic Republic of Congo, 2007; Sierra Leon, 2014</p>
-
-    <div class="row">
-        <div class="col-md-6 title">
-            <h3>How has the virus changed over time?</h3>
-            <p>Gire 2014 found that a rooted-to-tip distance correlated better with rooting from the 1976 outbreak than the 2014 outbreak. We utilized Clustal Omega to find the sequence identity between each outbreak and discovered that, the outbreak has become increasingly divergent from the 1976 strand over time. </p>
-
-            <div class="col-md-12 diagram">
-                <align="center"><img src="img/identity.png" alt="Ebola Virus" class="img-rounded"></center>
-            </div>
-
-            <br>
-
-            (Graph for sequence diverence)
-
-            <br><br>
-
-            <p>Presently, the 2007 strand is only 97.02% similar to the 1976 outbreak. While that may not seem much, this difference corresponds to just over 560 nucleotides in difference.</p>
-
-            Using sequence divergence, we reproduced a calculation made by Gire 2014 in which they claimed there have been 8e-04 mutations/bp-year (mutations per basepair per year) in the Ebola virus genome. We replicated this calculation and performed similar analysis between each outbreak. Interestingly, it seems that the virus has mutated more quickly relative to other outbreaks by about 30%.
-
-            <br><br>
-
-            (Graph for mutations/bp-year)
-
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6 title">
-            <h3>What does the Ebola virus genome code for?</h3>
-            Ebolavirus codes for 7 amino acids: Nucleoprotein (NP), Transcription factor (VP35), Matrix protein (VP40), Glycoprotein (GP), Small Glycoprotein (sGP), Transcription initalizor (VP30), Transcription factor regulator (?) (VP24), RNA Polymerase (L).
-
-            <br><br>
-
-            Wikipedia describes each of the proteins as follows:
-
-            Nucleoprotein (NP): Forms the body of the inner capsid around the RNA. Transcription Factor (VP35): Stays in complex with RNA and initiates transcription. Matrix Protein (VP40)
-
-            VP40: Matrix protein. Connects the outer wall of the glycoprotein to the inner capsid which contains the RNA.
-
-            GP: Glycoprotein. Surrounds the virus with protective glycans. Shares an immunosuppressive domain with HIV and influenza. Mediates fusion with the host cell.
-
-            sGP: Small glycoprotein. Secreted in addition to GP. Possibly contributes to evasion of host antibodies.
-
-            VP30: Essential for the initiation of transcription.
-            http://jvi.asm.org/content/82/24/12569.full
-
-            VP24: Appears to regulate transcription. Reduces transcription of Ebola genome.
-            http://jid.oxfordjournals.org/content/196/Supplement_2/S284.full
-
-            L: RNA-Dependant RNA Polymerase. Copies the genome of Ebola using nucleotides recruited from host cell.
-
-        </div>
-    </div>
-
-    >>>>>>> f7726a58beb45c34cc246c35d25e300611fdb725
     <div class="row">
         <div class="col-md-6 title">
             <h3> Where do changes occur?</h3>
             <p>
-                <<<<<<< HEAD
                 What was more interesting was when we did a tBLASTn for each protein sequence against the corresponding
                 gene segment for each strain of Ebola. Most of the proteins have 1% non-synonymous changes,
                 but the GP protein had a 5% change, while the VP30 protein was 100% conserved.
-                =======
-                What was more interesting was when we did a tBLASTn for each protein sequence against the corresponding gene segment for each strain of Ebola. Most of the proteins have 1% non-synonymous changes, but the GP protein had a 5% change, while the VP30 protein was 100% conserved.
-                >>>>>>> f7726a58beb45c34cc246c35d25e300611fdb725
             </p>
         </div>
         <div class="col-md-6 space-out">
