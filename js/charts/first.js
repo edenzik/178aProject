@@ -1,3 +1,10 @@
+var freqData=[
+    {State:'Zaire(1976)',freq:{deaths:280, survivors:38}}
+    ,{State:'Zaire(1995)',freq:{deaths:254, survivors:61}}
+    ,{State:'D.R.Congo(2007)',freq:{deaths:187, survivors:77}}
+    ,{State:'S.L.(2014)',freq:{deaths:1267, survivors:4923}}
+];
+
 function dashboard(id, fData){
             var barColor = 'steelblue';
             function segColor(c){ return {deaths:"#ba807d", survivors:"#7db7ba"}[c]; }
