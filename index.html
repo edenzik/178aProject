@@ -15,10 +15,12 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
     <link href="css/c3.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css" type='text/css'>
     <link rel="icon" type="image/png" href="/favicon.png"/>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="js/c3.min.js"></script>
+    <script src="js/charts/first.js"></script>
 
 </head>
 
@@ -61,8 +63,10 @@
     <h2>Brandon, Zeevy, Eden</h2>
 
     <div class="row">
+
         <div class="col-md-6">
             <h3>Introduction</h3>
+
             <p>
                 We chose to study the most recent outbreak of Ebola, EBOV.
                 Ebola is a single strand of RNA which encodes 7 proteins.
@@ -82,14 +86,30 @@
     </div>
 
     <div class="row">
-        <div class="col-md-12 ebola-image">
+
+        <div class="col-md-6">
+            <h3>Basic Structure</h3>
+            <ul>
+                <li>NP: Nucleoprotein. Forms the body of the inner capsid around the RNA.</li>
+                <li>VP35: Transcription factor. Stays in complex with RNA and initiates transcription.</li>
+                <li>VP40: Matrix protein. Connects the outer wall of the glycoprotein to the inner capsid which contains the RNA.</li>
+                <li>GP: Glycoprotein. Surrounds the virus with protective glycans. Shares an immunosuppressive domain with HIV and influenza. Mediates fusion with the host cell.</li>
+                <li>sGP: Small glycoprotein. Secreted in addition to GP. Possibly contributes to evasion of host antibodies.</li>
+                <li>VP30: Essential for the initiation of transcription.</li>
+                <li>VP24: Appears to regulate transcription. Reduces transcription of Ebola genome.</li>
+                <li>L: RNA-Dependant RNA Polymerase. Copies the genome of Ebola using nucleotides recruited from host cell.</li>
+            </ul>
+        </div>
+        <div class="col-md-6 ebola-image">
             <img src="img/ebola_virus.jpg" alt="Ebola Virus" class="img-rounded">
         </div>
     </div>
 
 
     <div class="row">
+
         <div class="col-md-12">
+            <h3>Sequence</h3>
 
             <p>
                 Improvements in sequencing technology have allowed many copies of Ebola to be sequenced from the most
@@ -100,45 +120,8 @@
                 Multiple sequence alignment returned a percent identity matrix indicating a change of 3.14 % over 38 years.
             </p>
         </div>
-        <div class="col-md-12 diagram">
+        <div class="col-md-12 sequence">
             <img src="img/matrix.png" alt="Ebola Virus" class="img-rounded">
-        </div>
-    </div>
-
-    <hr/>
-
-    <div class="row">
-        <div class="col-md-12">
-            <h3>Strands</h3>
-
-            <p>There are five strands of ebolavirus recognized by the International Committee on Taxonomy of Viruses:
-                Ebola virus (EBOV), Sudan virus (SUDV), Reston virus (RESTV), Taï Forest virus (TAFV), and Bundibugyo
-                virus (BDBV). Despite the large number of outbreaks over the past 40 years, we focus our analysis on
-                Ebola virus and outbreaks in Zaire (1976), Zaire (1995), Democractic Republic of the Congo (2007), and
-                Sierra Leon (2014).
-                <br>
-                The World Health Organization reports 15,351 Ebola cases with 5,459 deaths across eight countries so far
-                in this current outbreak. Amongst the outbreak, Stephen Gire and 49 others published <i>Genomic
-                    surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak</i> in Science
-                this August and made publicly available 99 fully sequenced Ebola virus genomes from 78 patients in
-                Sierra Leon.
-            </p>
-        </div>
-        <div class="col-md-12">
-            <div id='dashboard' align="center">
-            </div>
-            <script src="http://d3js.org/d3.v3.min.js"></script>
-            <script src="js/c3.min.js"></script>
-            <script src="js/charts/first.js"></script>
-            <script>
-                var freqData = [
-                    {State: 'Zaire(1976)', freq: {deaths: 280, survivors: 38}}
-                    , {State: 'Zaire(1995)', freq: {deaths: 254, survivors: 61}}
-                    , {State: 'D.R.Congo(2007)', freq: {deaths: 187, survivors: 77}}
-                    , {State: 'S.L.(2014)', freq: {deaths: 1267, survivors: 4923}}
-                ];
-                dashboard('#dashboard', freqData);
-            </script>
         </div>
     </div>
 
@@ -146,7 +129,7 @@
         <div class="col-md-6 title">
             <h3> Where do changes occur?</h3>
             <p>
-            What was more interesting was when we did a tBLASTn for each protein sequence against the corresponding
+                What was more interesting was when we did a tBLASTn for each protein sequence against the corresponding
                 gene segment for each strain of Ebola. Most of the proteins have 1% non-synonymous changes,
                 but the GP protein had a 5% change, while the VP30 protein was 100% conserved.
             </p>
@@ -178,136 +161,424 @@
         </div>
     </div>
 
-        <hr/>
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Introduction</h3>
 
-                <p>There are five strands of ebolavirus recognized by the International Committee on Taxonomy of
-                    Viruses: Ebola virus (EBOV), Sudan virus (SUDV), Reston virus (RESTV), Taï Forest virus (TAFV), and
-                    Bundibugyo virus (BDBV). Despite the large number of outbreaks over the past 40 years, we focus our
-                    analysis on Ebola virus and outbreaks in Zaire (1976), Zaire (1995), Democractic Republic of the
-                    Congo (2007), and Sierra Leon (2014).
-                    <br><br>
-                    The World Health Organization reports 15,351 Ebola cases with 5,459 deaths across eight countries so
-                    far in this current outbreak. Amongst the outbreak, Stephen Gire and 49 others published <i>Genomic
-                        surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak</i> in
-                    Science this August and made publicly available 99 fully sequenced Ebola virus genomes from 78
-                    patients in Sierra Leon.
-                </p>
-            </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Strands</h3>
 
+            <p>The glycoprotein is the only part of Ebola which is exposed, whereas the VP30 is one of the most internal
+                proteins, responsible for transcription initiation and RNA stabilization.
+            </p>
+            <p>
+                Even more interesting was when we looked at where the changes in GP occurred, there were few changes
+                within the first 250 amino acids, and few changes after the 500th amino acid.
+                This indicated that perhaps certain regions of the glycoprotein were ‘intentionally’ changing while
+                others were ‘intentionally’ not changing.
+            </p>
+        </div>
+        <img style="padding-top: 5em; padding-left: 3em;" src="img/DNA_icon.svg" alt="Kiwi standing on oval">
+        <div class="col-md-6">
 
-            <div id="glmol01"></div>
-            <textarea id="glmol01_src" style="display: none;"></textarea>
+        </div>
+    </div>
 
-            </div>
+    <div class="row">
 
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <hr/>
-                    <h3>Stuff about structure</h3>
-                    <h4>Basic Structure</h4>
-
-                    <p>Lorem ipsum dolor sit amet, mea patrioque tincidunt mnesarchum an, eu nam saperet rationibus.
-                        Invidunt imperdiet consectetuer vel cu, an mea illum mollis voluptatum. Ea wisi modus lobortis
-                        usu, cum id commodo scripta deserunt, ea sonet nobis definitionem usu. Quem salutandi voluptatum
-                        mel ad, commodo perfecto an mel. Id vocibus oportere sed, clita ullamcorper no cum. Movet
-                        adipisci euripidis ut eum, ei patrioque inciderint complectitur eum.</p>
-
-                    <h4>More details</h4>
-
-                    <p>Lorem ipsum dolor sit amet, mea patrioque tincidunt mnesarchum an, eu nam saperet rationibus.
-                        Invidunt imperdiet consectetuer vel cu, an mea illum mollis voluptatum. Ea wisi modus lobortis
-                        usu, cum id commodo scripta deserunt, ea sonet nobis definitionem usu. Quem salutandi voluptatum
-                        mel ad, commodo perfecto an mel. Id vocibus oportere sed, clita ullamcorper no cum. Movet
-                        adipisci euripidis ut eum, ei patrioque inciderint complectitur eum.</p>
-
-
-                    <h4>References</h4>
-                    <ul>
-                        <li>CVE-2014-0160</li>
-                        <li>NCSC-FI case# 788210</li>
-                        <li><a href="https://www.openssl.org/news/secadv_20140407.txt">OpenSSL Security Advisory</a>
-                            <small>(published 7th of April 2014, ~17:30 UTC)</small>
-                        </li>
-                        <li><a href="http://blog.cloudflare.com/staying-ahead-of-openssl-vulnerabilities">CloudFlare:
-                            Staying ahead of OpenSSL vulnerabilities</a>
-                            <small>(published 7th of April 2014, ~18:00 UTC)</small>
-                        </li>
-                        <li><a href="http://heartbleed.com/">heartbleed.com</a>
-                            <small>(published 7th of April 2014, ~19:00 UTC)</small>
-                        </li>
-                        <li><a href="http://www.ubuntu.com/usn/usn-2165-1/">Ubuntu / Security Notice USN-2165-1</a></li>
-                        <li><a href="http://www.freebsd.org/security/advisories/FreeBSD-SA-14:06.openssl.asc">FreeBSD /
-                            SA-14:06.openssl</a></li>
-                        <li><a href="http://www.freshports.org/security/openssl/">FreshPorts / openssl 1.0.1_10</a></li>
-                        <li><a href="https://blog.torproject.org/blog/openssl-bug-cve-2014-0160">Tor Project / OpenSSL
-                            bug CVE-2014-0160</a></li>
-                        <li><a href="https://rhn.redhat.com/errata/RHSA-2014-0376.html">RedHat / RHSA-2014:0376-1</a>
-                        </li>
-                        <li><a href="http://lists.centos.org/pipermail/centos-announce/2014-April/020249.html">CentOS /
-                            CESA-2014:0376</a></li>
-                        <li><a href="https://lists.fedoraproject.org/pipermail/announce/2014-April/003205.html">Fedora /
-                            Status on CVE-2014-0160</a></li>
-                        <li><a href="http://www.kb.cert.org/vuls/id/720951">CERT/CC (USA)</a></li>
-                        <li><a href="https://www.cert.fi/en/reports/2014/vulnerability788210.html">NCSC-FI (Finland)</a>
-                        </li>
-                        <li><a href="https://www.cert.at/warnings/all/20140408.html">CERT.at (Austria)</a></li>
-                        <li><a href="http://www.circl.lu/pub/tr-21/">CIRCL (Luxembourg)</a></li>
-                        <li><a href="http://www.cert.ssi.gouv.fr/site/CERTFR-2014-ALE-003/index.html">CERT-FR
-                            (France)</a></li>
-                        <li><a href="https://www.jpcert.or.jp/english/at/2014/at140013.html">JPCERT/CC (Japan)</a></li>
-                        <li><a href="https://www.cert.se/2014/04/ny-sarbarhet-i-openssl-1-0-1">CERT-SE (Sweden)</a></li>
-                        <li>
-                            <a href="https://www.nsm.stat.no/Arbeidsomrader/Internettsikkerhet-NorCERT/Forsideartikler-NorCERT/Alvorlig-sarbarhet-i-SSL/">NorCERT
-                                (Norway)</a></li>
-                        <li>
-                            <a href="https://www.ncsc.nl/dienstverlening/expertise-advies/factsheets/factsheet-heartbleed-ernstige-kwetsbaarheid-in-openssl.html">NCSC-NL
-                                (Netherlands)</a></li>
-                        <li>
-                            <a href="http://www.cert.org.cn/publish/main/9/2014/20140410091311360563426/20140410091311360563426_.html">CNCERT/CC
-                                (People's Republic of China)</a></li>
-                        <li><a href="http://www.publicsafety.gc.ca/cnt/rsrcs/cybr-ctr/2014/av14-017-eng.aspx">Public
-                            Safety Canada</a></li>
-                        <li><a href="https://cert.litnet.lt/lt/dokumentai/heartbleed-openssl-pazeidziamumas">LITNET CERT
-                            (Lithuania)</a></li>
-                        <li>
-                            <a href="http://www.mycert.org.my/en/services/advisories/mycert/2014/main/detail/963/index.html">MyCERT
-                                (Malaysia)</a></li>
-                        <li><a href="http://www.cert.org.mx/boletin/?vulne=6487">UNAM-CERT (Mexico)</a></li>
-                        <li><a href="http://www.singcert.org.sg/alerts/21-latest/607-singcert-openssl-heartbleed-bug">SingCERT
-                            (Singapore)</a></li>
-                        <li>
-                            <a href="http://www.qcert.org/sites/default/files/public/alert_details_9042014_heartbleed.pdf">Q-CERT
-                                (Qatar)</a></li>
-                    </ul>
-
-
-                    <p class="timestamp">Page updated 2014-04-29 07:05 UTC.</p>
-                </div>
-            </div>
+        <div class="col-md-6">
+            <h3>Kitwit Comparison</h3>
+            <table class="table">
+                <tr>
+                    <th class="tg-031e">Sequence #</th>
+                    <th class="tg-031e">From</th>
+                    <th class="tg-031e">To</th>
+                    <th class="tg-031e">Number of Pateints</th>
+                </tr>
+                <tr>
+                    <td class="tg-031e">46</th>
+                    <td class="tg-031e">S</th>
+                    <td class="tg-031e">N</th>
+                    <td class="tg-031e">1</th>
+                </tr>
+                <tr>
+                    <td class="tg-031e">82</td>
+                    <td class="tg-031e">A</td>
+                    <td class="tg-031e">V</td>
+                    <td class="tg-031e">78</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">262</td>
+                    <td class="tg-031e">T</td>
+                    <td class="tg-031e">A</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">291</td>
+                    <td class="tg-031e">W</td>
+                    <td class="tg-031e">R</td>
+                    <td class="tg-031e">1</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">314</td>
+                    <td class="tg-031e">R</td>
+                    <td class="tg-031e">G</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">315</td>
+                    <td class="tg-031e">A</td>
+                    <td class="tg-031e">P</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">331</td>
+                    <td class="tg-031e">G</td>
+                    <td class="tg-031e">E</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">336</td>
+                    <td class="tg-031e">T</td>
+                    <td class="tg-031e">N</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">359</td>
+                    <td class="tg-031e">E</td>
+                    <td class="tg-031e">K</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">382</td>
+                    <td class="tg-031e">P</td>
+                    <td class="tg-031e">T</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">405</td>
+                    <td class="tg-031e">E</td>
+                    <td class="tg-031e">G</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">411</td>
+                    <td class="tg-031e">T</td>
+                    <td class="tg-031e">A</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">440</td>
+                    <td class="tg-031e">G</td>
+                    <td class="tg-031e">S</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">441</td>
+                    <td class="tg-031e">T</td>
+                    <td class="tg-031e">A</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">443</td>
+                    <td class="tg-031e">L</td>
+                    <td class="tg-031e">S</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">446</td>
+                    <td class="tg-031e">P</td>
+                    <td class="tg-031e">L</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">455</td>
+                    <td class="tg-031e">H</td>
+                    <td class="tg-031e">Y</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">499</td>
+                    <td class="tg-031e">A</td>
+                    <td class="tg-031e">T</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+                <tr>
+                    <td class="tg-031e">503</td>
+                    <td class="tg-031e">A</td>
+                    <td class="tg-031e">V</td>
+                    <td class="tg-031e">81</td>
+                </tr>
+            </table>
         </div>
 
-        <footer class="container">
-            <p><a class="codenomicon" title="Codenomicon - April 2014" href="http://www.codenomicon.com/">Codenomicon -
-                April 2014</a></p>
-        </footer>
+        <div class="col-md-6">
+            <h3>Mayinga comparison</h3>
+            <table class="table">
+                <tr>
+                    <th class="tg-031e">Sequence #</th>
+                    <th class="tg-031e">From</th>
+                    <th class="tg-031e">To</th>
+                    <th class="tg-031e">Number of Pateints</th>
+                </tr>
+                <tr>
+                    <td>46</td>
+                    <td>S</td>
+                    <td>N</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>82</td>
+                    <td>A</td>
+                    <td>V</td>
+                    <td>78</td>
+                </tr>
+                <tr>
+                    <td>262</td>
+                    <td>T</td>
+                    <td>A</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>291</td>
+                    <td>W</td>
+                    <td>R</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>310</td>
+                    <td>V</td>
+                    <td>A</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>315</td>
+                    <td>A</td>
+                    <td>P</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>331</td>
+                    <td>G</td>
+                    <td>E</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>336</td>
+                    <td>T</td>
+                    <td>N</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>359</td>
+                    <td>E</td>
+                    <td>K</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>377</td>
+                    <td>S</td>
+                    <td>P</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>378</td>
+                    <td>L</td>
+                    <td>P</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>382</td>
+                    <td>P</td>
+                    <td>T</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>405</td>
+                    <td>E</td>
+                    <td>G</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>411</td>
+                    <td>T</td>
+                    <td>A</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>422</td>
+                    <td>S</td>
+                    <td>P</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>430</td>
+                    <td>P</td>
+                    <td>L</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>441</td>
+                    <td>T</td>
+                    <td>A</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>443</td>
+                    <td>F</td>
+                    <td>S</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>446</td>
+                    <td>P</td>
+                    <td>L</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>455</td>
+                    <td>H</td>
+                    <td>Y</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>503</td>
+                    <td>A</td>
+                    <td>V</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td>544</td>
+                    <td>I</td>
+                    <td>T</td>
+                    <td>81</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>3D Structure Analysis</h3>
+
+            <p>A look at the 3D structure of the GP as well as a detailed paper about the mechanism provided some
+                possibilities. Most of the glycoprotein is protected by a mucin-like domain and is therefore
+                impossible to target with antibodies. The parts which were changing corresponded to the parts of the
+                glycoprotein which are exposed to attack by antibodies. A crystal structure is available with the GP
+                complex bound to antibodies from a survivor.
+            </p>
+
+        </div>
+        <div class="col-md-6">
+            <div id="glmol01"></div>
+            <textarea id="glmol01_src" style="display: none;"></textarea>
+        </div>
     </div>
 
 
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="js/Three49custom.js"></script>
-    <script type="text/javascript" src="js/GLmol.js"></script>
-    <script type="text/javascript">
-        var glmol01 = new GLmol('glmol01', true);
-        $.get("molecules/simple_gp2.pdb", function (ret) {
-            $("#glmol01_src").val(ret);
-            glmol01.loadMolecule();
-        });
-    </script>
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <hr/>
+        <h3>Stuff about structure</h3>
+        <h4>Basic Structure</h4>
+
+        <p>Lorem ipsum dolor sit amet, mea patrioque tincidunt mnesarchum an, eu nam saperet rationibus.
+            Invidunt imperdiet consectetuer vel cu, an mea illum mollis voluptatum. Ea wisi modus lobortis
+            usu, cum id commodo scripta deserunt, ea sonet nobis definitionem usu. Quem salutandi voluptatum
+            mel ad, commodo perfecto an mel. Id vocibus oportere sed, clita ullamcorper no cum. Movet
+            adipisci euripidis ut eum, ei patrioque inciderint complectitur eum.</p>
+
+        <h4>More details</h4>
+
+        <p>Lorem ipsum dolor sit amet, mea patrioque tincidunt mnesarchum an, eu nam saperet rationibus.
+            Invidunt imperdiet consectetuer vel cu, an mea illum mollis voluptatum. Ea wisi modus lobortis
+            usu, cum id commodo scripta deserunt, ea sonet nobis definitionem usu. Quem salutandi voluptatum
+            mel ad, commodo perfecto an mel. Id vocibus oportere sed, clita ullamcorper no cum. Movet
+            adipisci euripidis ut eum, ei patrioque inciderint complectitur eum.</p>
+
+
+        <h4>References</h4>
+        <ul>
+            <li>CVE-2014-0160</li>
+            <li>NCSC-FI case# 788210</li>
+            <li><a href="https://www.openssl.org/news/secadv_20140407.txt">OpenSSL Security Advisory</a>
+                <small>(published 7th of April 2014, ~17:30 UTC)</small>
+            </li>
+            <li><a href="http://blog.cloudflare.com/staying-ahead-of-openssl-vulnerabilities">CloudFlare:
+                Staying ahead of OpenSSL vulnerabilities</a>
+                <small>(published 7th of April 2014, ~18:00 UTC)</small>
+            </li>
+            <li><a href="http://heartbleed.com/">heartbleed.com</a>
+                <small>(published 7th of April 2014, ~19:00 UTC)</small>
+            </li>
+            <li><a href="http://www.ubuntu.com/usn/usn-2165-1/">Ubuntu / Security Notice USN-2165-1</a></li>
+            <li><a href="http://www.freebsd.org/security/advisories/FreeBSD-SA-14:06.openssl.asc">FreeBSD /
+                SA-14:06.openssl</a></li>
+            <li><a href="http://www.freshports.org/security/openssl/">FreshPorts / openssl 1.0.1_10</a></li>
+            <li><a href="https://blog.torproject.org/blog/openssl-bug-cve-2014-0160">Tor Project / OpenSSL
+                bug CVE-2014-0160</a></li>
+            <li><a href="https://rhn.redhat.com/errata/RHSA-2014-0376.html">RedHat / RHSA-2014:0376-1</a>
+            </li>
+            <li><a href="http://lists.centos.org/pipermail/centos-announce/2014-April/020249.html">CentOS /
+                CESA-2014:0376</a></li>
+            <li><a href="https://lists.fedoraproject.org/pipermail/announce/2014-April/003205.html">Fedora /
+                Status on CVE-2014-0160</a></li>
+            <li><a href="http://www.kb.cert.org/vuls/id/720951">CERT/CC (USA)</a></li>
+            <li><a href="https://www.cert.fi/en/reports/2014/vulnerability788210.html">NCSC-FI (Finland)</a>
+            </li>
+            <li><a href="https://www.cert.at/warnings/all/20140408.html">CERT.at (Austria)</a></li>
+            <li><a href="http://www.circl.lu/pub/tr-21/">CIRCL (Luxembourg)</a></li>
+            <li><a href="http://www.cert.ssi.gouv.fr/site/CERTFR-2014-ALE-003/index.html">CERT-FR
+                (France)</a></li>
+            <li><a href="https://www.jpcert.or.jp/english/at/2014/at140013.html">JPCERT/CC (Japan)</a></li>
+            <li><a href="https://www.cert.se/2014/04/ny-sarbarhet-i-openssl-1-0-1">CERT-SE (Sweden)</a></li>
+            <li>
+                <a href="https://www.nsm.stat.no/Arbeidsomrader/Internettsikkerhet-NorCERT/Forsideartikler-NorCERT/Alvorlig-sarbarhet-i-SSL/">NorCERT
+                    (Norway)</a></li>
+            <li>
+                <a href="https://www.ncsc.nl/dienstverlening/expertise-advies/factsheets/factsheet-heartbleed-ernstige-kwetsbaarheid-in-openssl.html">NCSC-NL
+                    (Netherlands)</a></li>
+            <li>
+                <a href="http://www.cert.org.cn/publish/main/9/2014/20140410091311360563426/20140410091311360563426_.html">CNCERT/CC
+                    (People's Republic of China)</a></li>
+            <li><a href="http://www.publicsafety.gc.ca/cnt/rsrcs/cybr-ctr/2014/av14-017-eng.aspx">Public
+                Safety Canada</a></li>
+            <li><a href="https://cert.litnet.lt/lt/dokumentai/heartbleed-openssl-pazeidziamumas">LITNET CERT
+                (Lithuania)</a></li>
+            <li>
+                <a href="http://www.mycert.org.my/en/services/advisories/mycert/2014/main/detail/963/index.html">MyCERT
+                    (Malaysia)</a></li>
+            <li><a href="http://www.cert.org.mx/boletin/?vulne=6487">UNAM-CERT (Mexico)</a></li>
+            <li><a href="http://www.singcert.org.sg/alerts/21-latest/607-singcert-openssl-heartbleed-bug">SingCERT
+                (Singapore)</a></li>
+            <li>
+                <a href="http://www.qcert.org/sites/default/files/public/alert_details_9042014_heartbleed.pdf">Q-CERT
+                    (Qatar)</a></li>
+        </ul>
+
+
+        <p class="timestamp">Page updated 2014-04-29 07:05 UTC.</p>
+    </div>
+</div>
+</div>
+
+<footer class="container">
+    <p><a class="codenomicon" title="Codenomicon - April 2014" href="http://www.codenomicon.com/">Codenomicon -
+        April 2014</a></p>
+</footer>
+</div>
+
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/Three49custom.js"></script>
+<script type="text/javascript" src="js/GLmol.js"></script>
+<script type="text/javascript">
+    var glmol01 = new GLmol('glmol01', true);
+    $.get("molecules/simple_gp2.pdb", function (ret) {
+        $("#glmol01_src").val(ret);
+        glmol01.loadMolecule();
+    });
+</script>
 
 
 </body>

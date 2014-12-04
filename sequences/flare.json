@@ -1,0 +1,36 @@
+{
+  "name": "flare",
+  "children": [
+    {
+      "name": "analytics",
+      "children": [
+        {
+          "name": "cluster",
+          "children": [
+            {
+              "name": "S -> N",
+              "size": 1
+            },
+            {
+              "name": "A -> V",
+              "size": 78
+            },
+            {
+              "name": "T -> A",
+              "size": 81
+            },
+            {
+              "name": "W -> R",
+              "size": 1
+            },
+            {
+              "name": "R -> G",
+              "size": 81
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
