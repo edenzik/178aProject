@@ -60,7 +60,6 @@ a.codenomicon {
     display: block;
     width: 214px;
     height: 95px;
-    background: url(/codenomicon.png) top;
     text-indent: -99999px;
     margin: 0 auto;
 }
@@ -188,9 +187,31 @@ rect:hover {  fill:blue; }
 .title {
     margin-top: 1.5em;
 }
-
 .dna {
     width: 180px; /* Width of new image */
     height: 236px; /* Height of new image */
 }
 
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
