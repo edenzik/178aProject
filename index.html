@@ -121,11 +121,37 @@
                 For previous outbreaks, we found complete sequences from 1976 (Mayinga), 1995 (Kitwit) and 2007 (Luebo).
                 Multiple sequence alignment returned a percent identity matrix indicating a change of 3.14 % over 38 years.
             </p>
-        </div>
-        <div class="col-md-12 sequence">
-            <img src="img/matrix.png" alt="Ebola Virus" class="img-rounded">
-        </div>
+        <p>
+            For this analysis, we utilized public facing Ebola virus genomes from NCBI. Specifically we utilized:
+            <a href = "http://www.ncbi.nlm.nih.gov/nuccore/NC_002549">NC_002549</a>(1976 outbreak), <a href = "http://www.ncbi.nlm.nih.gov/nuccore/KC242796.1">KC242796.1</a>(1995 outbreak), <a href = "http://www.ncbi.nlm.nih.gov/nuccore/KC242790.1">KC242790.1</a>(2007 outbreak), and <a href = "http://www.ncbi.nlm.nih.gov/nuccore/KM233090.1">KM233090.1</a>(2007 outbreak). Gire et. al. sequenced the Ebola virus genomes from 78 patients to obtain 99 genomes, due to intrahost variation, with all available in a <a href = "http://www.ncbi.nlm.nih.gov/bioproject?LinkName=nuccore_bioproject&from_uid=667853062">Bioproject</a>.
+        </p>
     </div>
+
+        <div class="row">
+            <div class="col-md-12">
+            <h3>How has the virus changed over time?</h3>
+            <p>Gire 2014 found that a rooted-to-tip distance correlated better with rooting from the 1976 outbreak than the 2014 outbreak. We utilized Clustal Omega to find the sequence identity between each outbreak and discovered that, the outbreak has become increasingly divergent from the 1976 strand over time.</p>
+
+            <br>
+
+            <img src="img/identity.png" alt="Ebola Virus" class="img-rounded" width="550" align="middle">
+
+            <br><br>
+
+            <img src="img/seqident.png" alt="Ebola Virus" class="img-rounded" width="550" align="middle">
+
+            <br><br>
+
+            <p>Presently, the 2007 strand is only 97.02% similar to the 1976 outbreak. While that may not seem much, this difference corresponds to just over 560 nucleotides in difference.</p>
+
+            Using sequence divergence, we reproduced a calculation made by Gire 2014 in which they claimed there have been 8e-04 mutations/bp-year (mutations per basepair per year) in the Ebola virus genome. We replicated this calculation and performed similar analysis between each outbreak. Interestingly, it seems that the virus has mutated more quickly relative to other outbreaks by about 30%.
+
+            <br><br>
+
+
+            <img src="img/mutationplot.png" alt="Ebola Virus" class="img-rounded" width="550" align="middle">
+            </div>
+        </div>
 
     <div class="row">
         <div class="col-md-6 title">
@@ -133,7 +159,7 @@
             <p>
                 Gire 2014 identified a number of significant protein changes across sequenced patients in Sierra Leon, illustrated in the table. The conserved region of the first 250 amino acids is observed in their findings as well, as the frequency of mutation is not shown.
 
-</p>
+            </p>
             <p>
                 Although we know now know how the Ebola virus has changed, we do not know the corresponding biological function to these mutations. Our discovery of non-conserved regions being the small regions of the Glycoprotein indictate a potential searching point for biomedical research. This is particularly alarming as a vaccine may be rendered ineffective quicker than expected - especially with such intrahost and interhost variation present in the current outbreak.
             </p>
@@ -744,26 +770,27 @@
         <div class="col-md-12 sequence">
             <img src="img/matrix.png" alt="Ebola Virus" class="img-rounded">
         </div>
-        </div>
+    </div>
     <div class="row">
         <div class="col-md-6 sequence">
             <p>
-            The other conserved region is the glycan protected region which give the virus protection from antibodies. The first 250 amino acids of this region have seen no change from 1976 to 2014. This domain is protected in vitro by glycans, and seems to mediate binding to the host cell via a receptor, but the exact mechanism is still unknown.
+                The other conserved region is the glycan protected region which give the virus protection from antibodies. The first 250 amino acids of this region have seen no change from 1976 to 2014. This domain is protected in vitro by glycans, and seems to mediate binding to the host cell via a receptor, but the exact mechanism is still unknown.
             </p>
         </div>
         <div class="col-md-6 sequence">
-                <img src="img/glycan.png" alt="Ebola Virus" class="img-rounded">
-            </div>
+            <img src="img/glycan.png" alt="Ebola Virus" class="img-rounded">
+        </div>
     </div>
 
     <div class="row">
         <div class="col-md-6">
             <h3>Nonconserved Regions</h3>
             <p>The areas of the glycoprotein which have changed are the small regions exposed to binding by antibodies. Below is the crystal structure of Ebola GP bound to antibodies from a human survivor from the 1995 Kitwit outbreak. The yellow is the GP core, while the green are antibodies.
-                </p>
+            </p>
         </div>
         <div class="col-md-6">
-            <img style="padding-top: 5em;" src="img/HRdomain.png" alt="Domain" class="img-rounded">
+            <div id="glmol02"></div>
+            <textarea id="glmol02_src" style="display: none;"></textarea>
         </div>
     </div>
 
@@ -778,11 +805,19 @@
 
 
         </div>
-        <div class="col-md-6">
-            <div id="glmol01"></div>
-            <textarea id="glmol01_src" style="display: none;"></textarea>
-        </div>
 
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Future Work</h3>
+            <p>
+                While our main focus was on the significantly high rate of change in GP, it might be interesting to look at the conserved nature of VP30. As a transcription factor, it makes sense that it would have to stay the same, assuming the initiation motif was the same. A motif search on the non-coding regions of the genome could be used to see if certain binding motifs have also stayed the same across the different strains.
+            </p>
+            <p>The L protein is the largest protein, and is the RNA dependant RNA polymerase. While the percent change in amino acids is not unusual, this amounts to 30 different residues. This could be typical of viruses, where low fidelity in the copy mechanism allows faster evolution. How Ebola controls which proteins are subject to repair and which are left to evolve could have to do with their relative locations in the capsid.
+            </p>
+        </div>
     </div>
 
 
@@ -791,61 +826,26 @@
 
             <h3>References</h3>
             <ul>
-                <li>CVE-2014-0160</li>
-                <li>NCSC-FI case# 788210</li>
-                <li><a href="https://www.openssl.org/news/secadv_20140407.txt">OpenSSL Security Advisory</a>
-                    <small>(published 7th of April 2014, ~17:30 UTC)</small>
-                </li>
-                <li><a href="http://blog.cloudflare.com/staying-ahead-of-openssl-vulnerabilities">CloudFlare:
-                    Staying ahead of OpenSSL vulnerabilities</a>
-                    <small>(published 7th of April 2014, ~18:00 UTC)</small>
-                </li>
-                <li><a href="http://heartbleed.com/">heartbleed.com</a>
-                    <small>(published 7th of April 2014, ~19:00 UTC)</small>
-                </li>
-                <li><a href="http://www.ubuntu.com/usn/usn-2165-1/">Ubuntu / Security Notice USN-2165-1</a></li>
-                <li><a href="http://www.freebsd.org/security/advisories/FreeBSD-SA-14:06.openssl.asc">FreeBSD /
-                    SA-14:06.openssl</a></li>
-                <li><a href="http://www.freshports.org/security/openssl/">FreshPorts / openssl 1.0.1_10</a></li>
-                <li><a href="https://blog.torproject.org/blog/openssl-bug-cve-2014-0160">Tor Project / OpenSSL
-                    bug CVE-2014-0160</a></li>
-                <li><a href="https://rhn.redhat.com/errata/RHSA-2014-0376.html">RedHat / RHSA-2014:0376-1</a>
-                </li>
-                <li><a href="http://lists.centos.org/pipermail/centos-announce/2014-April/020249.html">CentOS /
-                    CESA-2014:0376</a></li>
-                <li><a href="https://lists.fedoraproject.org/pipermail/announce/2014-April/003205.html">Fedora /
-                    Status on CVE-2014-0160</a></li>
-                <li><a href="http://www.kb.cert.org/vuls/id/720951">CERT/CC (USA)</a></li>
-                <li><a href="https://www.cert.fi/en/reports/2014/vulnerability788210.html">NCSC-FI (Finland)</a>
-                </li>
-                <li><a href="https://www.cert.at/warnings/all/20140408.html">CERT.at (Austria)</a></li>
-                <li><a href="http://www.circl.lu/pub/tr-21/">CIRCL (Luxembourg)</a></li>
-                <li><a href="http://www.cert.ssi.gouv.fr/site/CERTFR-2014-ALE-003/index.html">CERT-FR
-                    (France)</a></li>
-                <li><a href="https://www.jpcert.or.jp/english/at/2014/at140013.html">JPCERT/CC (Japan)</a></li>
-                <li><a href="https://www.cert.se/2014/04/ny-sarbarhet-i-openssl-1-0-1">CERT-SE (Sweden)</a></li>
-                <li>
-                    <a href="https://www.nsm.stat.no/Arbeidsomrader/Internettsikkerhet-NorCERT/Forsideartikler-NorCERT/Alvorlig-sarbarhet-i-SSL/">NorCERT
-                        (Norway)</a></li>
-                <li>
-                    <a href="https://www.ncsc.nl/dienstverlening/expertise-advies/factsheets/factsheet-heartbleed-ernstige-kwetsbaarheid-in-openssl.html">NCSC-NL
-                        (Netherlands)</a></li>
-                <li>
-                    <a href="http://www.cert.org.cn/publish/main/9/2014/20140410091311360563426/20140410091311360563426_.html">CNCERT/CC
-                        (People's Republic of China)</a></li>
-                <li><a href="http://www.publicsafety.gc.ca/cnt/rsrcs/cybr-ctr/2014/av14-017-eng.aspx">Public
-                    Safety Canada</a></li>
-                <li><a href="https://cert.litnet.lt/lt/dokumentai/heartbleed-openssl-pazeidziamumas">LITNET CERT
-                    (Lithuania)</a></li>
-                <li>
-                    <a href="http://www.mycert.org.my/en/services/advisories/mycert/2014/main/detail/963/index.html">MyCERT
-                        (Malaysia)</a></li>
-                <li><a href="http://www.cert.org.mx/boletin/?vulne=6487">UNAM-CERT (Mexico)</a></li>
-                <li><a href="http://www.singcert.org.sg/alerts/21-latest/607-singcert-openssl-heartbleed-bug">SingCERT
-                    (Singapore)</a></li>
-                <li>
-                    <a href="http://www.qcert.org/sites/default/files/public/alert_details_9042014_heartbleed.pdf">Q-CERT
-                        (Qatar)</a></li>
+                <li>http://bl.ocks.org/mbostock</li>
+                <li>http://www.rcsb.org/pdb/101/motm.do?momID=178</li>
+                <li>http://jvi.asm.org/content/82/24/12569.full</li>
+                <li>http://jid.oxfordjournals.org/content/196/Supplement_2/S284.full</li>
+                <li>Future Virol. 2009; 4(6): 621ñ635.</li>
+                <li>http://www.cdc.gov/vhf/ebola/outbreaks/2014-west-africa/index.html</li>
+                <li>http://viralzone.expasy.org/all_by_species/207.html</li>
+                <li>http://news.harvard.edu/gazette/story/2014/08/ebola-genomes-sequenced/</li>
+                <li>http://www.ncbi.nlm.nih.gov/bioproject/PRJNA257197</li>
+                <li>http://en.wikipedia.org/wiki/List_of_Ebola_outbreaks</li>
+                <li>http://www.rcsb.org/pdb/explore.do?structureId=2EBO</li>
+                <li>http://www.rcsb.org/pdb/explore.do?structureId=3CSY</li>
+                <li>http://www.rcsb.org/pdb/explore.do?structureId=1EBO</li>
+                <li>http://en.wikipedia.org/wiki/List_of_Ebola_outbreaks</li>
+                <li>http://www.plospathogens.org/article/info%3Adoi%2F10.1371%2Fjournal.ppat.1002847</li>
+                <li>http://www-als.lbl.gov/index.php/contact/163-structure-of-the-ebola-virus-glycoprotein-bound-to-an-antibody-from-a-human-survivor.html</li>
+                <li>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2829775/</li>
+                <li>http://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi</li>
+                <li>http://apps.who.int/iris/bitstream/10665/141468/1/roadmapsitrep_12Nov2014_eng.pdf</li>
+                <li>Sievers F, Wilm A, Dineen DG, Gibson TJ, Karplus K, Li W, Lopez R, McWilliam H, Remmert M, Söding J, Thompson JD, Higgins DG (2011). Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega. Molecular Systems Biology 7:539 doi:10.1038/msb.2011.75</li>
             </ul>
 
 
@@ -868,7 +868,7 @@
 <script type="text/javascript" src="js/GLmol.js"></script>
 <script type="text/javascript">
     var glmol01 = new GLmol('glmol01', true);
-    $.get("molecules/simple_gp2.pdb", function (ret) {
+    $.get("molecules/antibody_small.pdb", function (ret) {
         $("#glmol01_src").val(ret);
         glmol01.loadMolecule();
     });
